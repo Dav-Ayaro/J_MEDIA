@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  scroll-padding: 10px;
+}
+
+.index_main_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.index_main_container .first_cntent {
+  width: 100%;
+  background: #1b1b1b;
+  padding: 30px;
+}
+.index_main_container .first_cntent h1 {
+  text-align: center;
+  padding: 10px;
+  color: orange;
+  font-size: 58px;
+  padding: 10px;
+}
+.index_main_container .first_cntent .text1 {
+  text-align: center;
+  word-spacing: 1.5px;
+  font-size: xx-large;
+  width: 80%;
+  color: whitesmoke;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+}
+.index_main_container .first_cntent .text1 h3 {
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+  margin: auto;
+  font-size: large;
+}
+.index_main_container .first_cntent .distribute {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+.index_main_container .first_cntent .distribute a {
+  text-decoration: none;
+  background: orange;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 30%;
+  text-align: center;
+  border-radius: 40px;
+  padding: 15px;
+  border: 1px solid orange;
+}
+.index_main_container .first_cntent .distribute a:hover {
+  transition: all ease-in-out 0.8s;
+  background: black;
+  border: 1px solid orange;
+  border-radius: 40px;
+}
+.index_main_container .first_cntent .platform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(245, 245, 245, 0.7058823529);
+  border-radius: 5px;
+}
+.index_main_container .first_cntent .platform div {
+  padding: 20px;
+  font-weight: bolder;
+}
+.index_main_container .container1 {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 150px;
+  background: url(../images/jala3.webp) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.index_main_container .container1 .image_1 {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+}
+.index_main_container .container1 .image_1 img {
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.582);
+  padding: 20px;
+}
+.index_main_container .container1 .container1_txt {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+}
+.index_main_container .container1 .container1_txt h2 {
+  color: orange;
+  padding: 10px;
+  font-size: 45px;
+}
+.index_main_container .container1 .container1_txt ul {
+  width: 80%;
+  text-align: start;
+}
+.index_main_container .container1 .container1_txt ul li {
+  list-style: none;
+  color: whitesmoke;
+  font-size: larger;
+  padding: 5px;
+}
+.index_main_container .container2 {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.index_main_container .container2 .container2_txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index_main_container .container2 .container2_txt h2 {
+  text-align: center;
+  color: orange;
+  font-size: 38px;
+  padding: 10px;
+}
+.index_main_container .container2 .container2_txt span {
+  text-align: center;
+  word-spacing: 1.5px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.index_main_container .container2 .image_2 {
+  width: 40%;
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+}
+.index_main_container .container2 .image_2 img {
+  border-radius: 10px;
+}
+.index_main_container .how_to {
+  width: 90%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.index_main_container .how_to h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  color: orange;
+}
+.index_main_container .how_to span {
+  text-align: center;
+  word-spacing: 1.5px;
+  font-size: xx-large;
+  color: whitesmoke;
+}
+.index_main_container .how_to ol {
+  background-color: red;
+}
+.index_main_container .how_to .start_now a {
+  background: orange;
+  border: 1px solid orange;
+  width: 20%;
+  padding: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+}
+.index_main_container .how_to .start_now a:hover {
+  background: black;
+  border: 1px solid orange;
+  transition: all 0.8s;
+}
+.index_main_container .artistic_say {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 150px;
+  height: 500px;
+}
+.index_main_container .artistic_say h1 {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-align: center;
+  padding: 10px;
+  color: orange;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.index_main_container .artistic_say .jala_artist {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  overflow-x: auto;
+  width: 100%;
+}
+.index_main_container .artistic_say .jala_artist div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.index_main_container .Connect {
+  display: flex;
+  position: absolute;
+  padding: 30px;
+}
+.index_main_container .Connect .whatsapp {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  z-index: 999;
+}
+.index_main_container .Connect .whatsapp .chip {
+  color: green;
+}
+.index_main_container .Connect .whatsapp a {
+  text-decoration: none;
+  color: green;
+  font-size: larger;
+}
+.index_main_container .Connect .whatsapp a i {
+  font-size: 70px;
+  color: green;
+}/*# sourceMappingURL=all.css.map */

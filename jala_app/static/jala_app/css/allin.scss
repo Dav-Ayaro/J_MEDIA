@@ -1,0 +1,273 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.music_Home{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.89);
+    z-index: 4;
+    // .jala_logo{
+    //     display: inline-block;
+    //     // justify-content: space-evenly;
+    //     img{
+    //         width: 100px;
+    //         height: 100px;
+    //     }
+    // }
+    h1{
+        color: orange;
+    }
+    .index_header{
+        width: 80%;
+        ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: whitesmoke;
+                    padding: 10px;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
+.carousel{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background: black;
+}
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    margin: auto;
+}
+.slide  {
+    opacity: 1;
+    height: 100%;
+    h1{
+        color: whitesmoke;
+        z-index: 3;
+        text-align: center;
+        padding: 30px;
+    }
+}
+.carousel > button{
+    position: absolute;
+    top: 50%;
+    font-size: xx-large;
+    background: none;
+    border: none;
+    color: rgba(255, 166, 0, 0.589);
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0 .5rem;
+    background-color: rgba(0,0,0,.1);
+}
+.carousel > button:hover,
+.carousel:focus{
+    color: white;
+    background-color: rgba(0,0,0,.2);
+}
+.carousel:focus{
+    outline: 1px solid black;
+}
+button.prev-btn{
+    left: 1rem;
+}
+button.next-btn{
+    right: 1rem;
+}
+
+footer{
+    // background: #232325;
+    // background-color: red;
+    // background: red;
+    // background-color: orange;
+    padding: 30px 0 0 0;
+    width: 100%;
+    border-top: 1px solid orange;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // flex-direction: column;
+        width: 100%;
+        .main_footer{
+            padding: 20px;
+            position: static;
+            img{
+            opacity: 0.3;
+            border-radius: 10px;
+            }
+            .social{
+                z-index: 4;
+            }
+        }
+        .quick_links{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+            .quick_l{
+                ul {
+                    color: whitesmoke;
+                    h1{
+                        text-transform: uppercase;
+                    }
+                    li{
+                        list-style: none;
+                        margin-top: 10px;
+                    }
+                }
+                ul li a{
+                    text-decoration: none;
+                    color: #f5f5f573;
+                    padding: 10px;
+                }
+                ul li a:hover{
+                    color: whitesmoke;
+                }
+            }
+        }
+        .contacts{
+            h1{
+                color: whitesmoke;
+                text-transform: uppercase;
+            }
+            div{
+                color: #f5f5f573;
+                padding: 10px;
+            }
+            div:hover{
+                color: whitesmoke;
+            }
+        }
+        .under_img{
+            img{
+                opacity: 0.4;
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            img:hover{
+                transition: ease-in-out .5s;
+                opacity: 1;
+                padding: 25px;
+            }
+        }
+        .connect_with_us{
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            width: 100%;
+            align-items: center;
+            border-top: 1px solid #f5f5f573;
+            border-bottom: 1px solid #f5f5f573;
+            .jala_media{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 200px;
+                    height: 180px;
+                }
+            }
+            .our_social{
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
+                background: orange;
+                align-items: center;
+                padding: 10px;
+                border-radius: 40px;
+                h4{
+                    all: inherit;
+                    color: whitesmoke;
+                    font-size: large;
+                }
+                div{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+        #cookieBanner {
+            position: fixed;
+            bottom: 20px;
+            left: 30px;
+            width: 30%;
+            padding: 10px;
+            background-color: #ffbb00d3;
+            color: white;
+            text-align: center;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cookieBanner p {
+            margin: 0;
+        }
+
+        #cookieBanner button {
+            margin: 5px;
+            width: 40%;
+            height: 40px;
+            padding: 8px 15px;
+            background-color: white;
+            color: #ffbb00;
+            border: none;
+            cursor: pointer;
+        }
+        #cookieBanner button:hover{
+            transition: all ease-in-out .5s;
+            border: 1px solid #fff;
+            padding: 10px 18px;
+            background: #ffbb00;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.89);
+        padding: 30px;
+        color: whitesmoke;
+        font-size: medium;
+        margin: auto;
+    }
+}

@@ -1,0 +1,7 @@
+J_MEDIA/__pycache__
+jala_app/migrations
+jala_app/__pycache__/
+*.sqlite3
+*.code-workspace
+media
+.env

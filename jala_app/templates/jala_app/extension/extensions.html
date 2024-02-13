@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JALA MEDIA - Digital Music Distributor </title>
+    <link rel="shortcut icon" href="{% static 'jala_app/images/JALAM1.jpg' %}" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'jala_app/css/allin.css' %}">
+    <link rel="stylesheet" href="{% static 'jala_app/fa/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'jala_app/css/all.css' %}">
+    <script src="{% static 'jala_app/js/slider.js' %}"></script>
+</head>
+<body>
+    <div class="music_Home ">
+        <div class="jala_logo">
+            <h1> Music Home </h1>
+            <!-- <img src="{% static 'jala_app/images/JALAM.png' %}" alt=""> -->
+        </div>
+        <div class="index_header">
+            <ul>
+                <li> <a href="">Home</a> </li>
+                <li> <a href="">About Us</a> </li>
+                <li> <a href="">Our Artist</a> </li>
+                <li> <a href="">Platforms</a> </li>
+                <li> <a href="">Pricing</a> </li>
+                <li> <a href=""> why US</a> </li>
+                <li> <a href="">Get Inspired</a> </li>
+                <li> <a href="">Know More</a> </li>
+                <li> <a href=""> Contact Us </a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="carousel" data-carousel>
+        <button class="prev-btn" data_c_button="prev">&#8656;</button>
+        <button class="next-btn" data_c_button="next">&#8658;</button>
+        <section arial-label="newest photo">
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="{% static 'jala_app/images/jala1.jpeg' %}" alt="">
+                </li>
+                <li class="slide">
+                    <img src="{% static 'jala_app/images/jala2.webp' %}" alt="">
+                    <h1 class="typing_automatically"></h1>
+                </li>
+                <li class="slide">
+                    <img src="{% static 'jala_app/images/jala6.webp' %}" alt="">
+                </li>
+                <li class="slide">
+                    <img src="{% static 'jala_app/images/jala01.webp' %}" alt="">
+                </li>
+            </ul>
+        </section>
+    </div>
+            <!-- typing words -->
+            <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script>
+            var Typed = new Typed(".typing_automatically", {
+                strings: ["PAMBANIA NDOTO YAKO YA MUZIKI","HARD WORKING BEATS TALENT", "DO NOT STOP RELEASING MUSIC","GET PAID THROUGH MUSIC", "DISTRIBUTE WORLDWIDE","START NOW"],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        </script>
+    {% block body %}
+
+    {% endblock %}
+    <footer>
+        <nav>
+            <div class="main_footer">
+                <img src="{% static 'jala_app/images/jala9.jpeg' %}" alt="">
+                <!-- <div class="social">
+                    <div>Instagram</div>
+                    <div>Facebook</div>
+                    <div>Tiktok</div>
+                    <div>Thread</div>
+                    <div>Twotter</div>
+                </div> -->
+            </div>
+            <div class="quick_links">
+                <div class="quick_l">
+                    <ul>
+                        <h1>Alt Links</h1>
+                        <li> <a href="">Home</a> </li>
+                        <li> <a href="">About</a> </li>
+                        <li> <a href="">Sell Music</a> </li>
+                        <li> <a href=""> view Perfomance </a> </li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h1> Resources </h1>
+                    <div> Blogs </div>
+                    <div>Email</div>
+                    <div>Whatsapp</div>
+                    <div>Make a Call</div>
+                </div>
+
+                <div class="under_img">
+                    <img src="{% static 'jala_app/images/art.jpeg' %}" alt="">
+                </div>
+            </div>
+            <div class="connect_with_us">
+                <div class="jala_media"><img src="{% static 'jala_app/images/JALAM.png' %}" alt=""> </div>
+                <div class="our_social">
+                    <h4>connect with Us</h4>
+                    <div class="net_us"><i class="fab fa-instagram"></i> </div>
+                    <div class="net_us"><i class="fab fa-twitter"></i> </div>
+                    <div class="net_us"><i class="fab fa-facebook"></i> </div>
+                    <div class="net_us"><i class="fab fa-tiktok"></i> </div>
+                </div>
+            </div>
+            <div id="cookieBanner" data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="200">
+                <p>This website uses cookies. By using this site, you agree to our use of cookies.</p>
+                <button id="acceptCookies">Accept</button>
+                <button id="rejectCookies">Reject</button>
+            </div>
+            
+        </nav>
+        <span> All Rights Reserved @JALA MEDIA INTERTAIMENT 2015 - 2024 </span>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script src="/static/jala_app/js/cookies.js"> </script>
+</body>
+</html>
