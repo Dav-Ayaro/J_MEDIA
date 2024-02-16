@@ -262,3 +262,98 @@ body{
     }
 }
 
+@media (max-width:1024px){
+    .index_main_container{
+        .first_cntent{
+            h1{
+                font-size: 28px;
+            }
+            .text1{
+                width: 100%;
+                font-size: x-large;
+                h1{
+                    font-size: medium;
+                }
+            }
+            .distribute{
+                width: 100%;
+                a{
+                    width: 100%;
+                }
+            }
+            .platform{
+                flex-wrap: nowrap;
+                width: 100%;
+                overflow-x: scroll;
+                background: #1b1b1b;
+                div{
+                    color: whitesmoke;
+                }
+            }
+        }
+        .container1{
+            flex-direction: column;
+            .image_1{
+                width: 100%;
+                img{
+                    width: 350px;
+                }
+            }
+            .container1_txt{
+                width: 100%;
+                h2{
+                    text-align: center;
+                    font-size: 28PX;
+                }
+                ul{
+                    width: 100%;
+                    margin: auto;
+                    li{
+                        font-size: x-large;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .container2{
+            flex-direction: column-reverse;
+            display: flex;
+            margin: auto;
+            margin-top: 100px;
+            .container2_txt{
+                width: 100%;
+                h2{
+                    font-size: 28px;
+                }
+                span{
+                    font-size: x-large;
+                }
+            }
+            .image_2{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+        .how_to{
+            h1{
+                font-size: 28px;
+            }
+            span{
+                font-size: x-large;
+            }
+        }
+        .artistic_say{
+            h1{
+
+                font-size: 20px;
+            }
+        }
+    }
+}
+

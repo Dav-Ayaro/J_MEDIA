@@ -230,18 +230,14 @@ footer nav .connect_with_us .our_social div i:hover {
 }
 footer nav #cookieBanner {
   position: fixed;
-  bottom: 20px;
-  left: 30px;
-  width: 30%;
+  bottom: 0;
+  width: 100%;
   padding: 10px;
   background-color: rgba(255, 187, 0, 0.8274509804);
   color: white;
   text-align: center;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  height: 200px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -250,13 +246,15 @@ footer nav #cookieBanner p {
 }
 footer nav #cookieBanner button {
   margin: 5px;
-  width: 40%;
+  width: 10%;
   height: 40px;
   padding: 8px 15px;
   background-color: white;
   color: #ffbb00;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
 }
 footer nav #cookieBanner button:hover {
   transition: all ease-in-out 0.5s;
@@ -277,4 +275,70 @@ footer span {
   color: whitesmoke;
   font-size: medium;
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .music_Home .index_header {
+    display: none;
+  }
+  .slide {
+    display: none;
+  }
+  .slide h1 {
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    background: white;
+    display: none;
+  }
+  footer {
+    border-top: none;
+  }
+  footer nav {
+    flex-direction: column-reverse;
+  }
+  footer nav .main_footer img {
+    opacity: 0.4;
+    width: 300px;
+  }
+  footer nav .main_footer .social {
+    z-index: 3;
+  }
+  footer nav .quick_links {
+    flex-direction: column;
+    width: 100%;
+  }
+  footer nav .contacts {
+    all: inherit;
+  }
+  footer nav .under_img {
+    opacity: 0.5;
+  }
+  footer nav .under_img img {
+    width: 100%;
+  }
+  footer nav .connect_with_us .jala_media img {
+    width: 100%;
+  }
+  footer nav .connect_with_us .our_social {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer nav .connect_with_us .our_social h4 {
+    font-size: large;
+    text-transform: uppercase;
+  }
+  footer nav .connect_with_us .our_social div {
+    display: flex;
+    flex-wrap: wrapx;
+  }
+  footer nav .connect_with_us .our_social div i {
+    font-size: 25px;
+  }
+  footer nav #cookieBanner {
+    flex: 1;
+  }
+  footer nav #cookieBanner button {
+    width: 40%;
+  }
 }/*# sourceMappingURL=allin.css.map */

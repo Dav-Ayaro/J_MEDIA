@@ -208,7 +208,6 @@ footer{
                 display: flex;
                 justify-content: space-evenly;
                 width: 60%;
-                // background: orange;
                 align-items: center;
                 padding: 10px;
                 border-radius: 40px;
@@ -235,18 +234,18 @@ footer{
         }
         #cookieBanner {
             position: fixed;
-            bottom: 20px;
-            left: 30px;
-            width: 30%;
+            bottom: 0;
+            // left: 30px;
+            width: 100%;
             padding: 10px;
             background-color: #ffbb00d3;
             color: white;
             text-align: center;
             box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            height: 200px;
+            // border-radius: 10px;
+            // height: 200px;
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -257,13 +256,15 @@ footer{
 
         #cookieBanner button {
             margin: 5px;
-            width: 40%;
+            width: 10%;
             height: 40px;
             padding: 8px 15px;
             background-color: white;
             color: #ffbb00;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
         }
         #cookieBanner button:hover{
             transition: all ease-in-out .5s;
@@ -285,5 +286,80 @@ footer{
         color: whitesmoke;
         font-size: medium;
         margin: auto;
+    }
+}
+
+@media (max-width:1024px){
+    .music_Home{
+        .index_header{
+            display: none;
+        }   
+    }
+    .slide{
+        display: none;
+        h1{
+            font-size: 15px;
+            text-align: center;
+            margin: auto;
+            background: white;
+            display: none;
+        }
+    }
+    footer{
+        border-top: none;
+        nav{
+            flex-direction: column-reverse;
+            .main_footer{
+                img{
+                    opacity: 0.4;
+                    width: 300px;
+                }
+                .social{
+                    z-index: 3;
+                }
+            }
+            .quick_links{
+                flex-direction: column;
+                width: 100%;
+            }
+            .contacts{
+                all: inherit;
+            }
+            .under_img{
+                opacity: 0.5;
+                img{
+                    width: 100%;
+                }
+            }
+            .connect_with_us{
+                .jala_media{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .our_social{
+                    width: 100%;
+                    flex-wrap: wrap;
+                    h4{
+                        font-size: large;
+                        text-transform: uppercase;
+                    }
+                    div{
+                        display: flex;
+                        flex-wrap: wrapx;
+                        i{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            #cookieBanner{
+                // flex-direction: col;
+                flex: 1;
+            }
+            #cookieBanner button{
+                width: 40%;
+            }
+        }
     }
 }

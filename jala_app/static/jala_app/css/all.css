@@ -255,4 +255,90 @@ body {
 .index_main_container .Connect .whatsapp a i {
   font-size: 70px;
   color: green;
+}
+
+@media (max-width: 1024px) {
+  .index_main_container .first_cntent h1 {
+    font-size: 28px;
+  }
+  .index_main_container .first_cntent .text1 {
+    width: 100%;
+    font-size: x-large;
+  }
+  .index_main_container .first_cntent .text1 h1 {
+    font-size: medium;
+  }
+  .index_main_container .first_cntent .distribute {
+    width: 100%;
+  }
+  .index_main_container .first_cntent .distribute a {
+    width: 100%;
+  }
+  .index_main_container .first_cntent .platform {
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: scroll;
+    background: #1b1b1b;
+  }
+  .index_main_container .first_cntent .platform div {
+    color: whitesmoke;
+  }
+  .index_main_container .container1 {
+    flex-direction: column;
+  }
+  .index_main_container .container1 .image_1 {
+    width: 100%;
+  }
+  .index_main_container .container1 .image_1 img {
+    width: 350px;
+  }
+  .index_main_container .container1 .container1_txt {
+    width: 100%;
+  }
+  .index_main_container .container1 .container1_txt h2 {
+    text-align: center;
+    font-size: 28PX;
+  }
+  .index_main_container .container1 .container1_txt ul {
+    width: 100%;
+    margin: auto;
+  }
+  .index_main_container .container1 .container1_txt ul li {
+    font-size: x-large;
+    text-align: center;
+  }
+  .index_main_container .container2 {
+    flex-direction: column-reverse;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .index_main_container .container2 .container2_txt {
+    width: 100%;
+  }
+  .index_main_container .container2 .container2_txt h2 {
+    font-size: 28px;
+  }
+  .index_main_container .container2 .container2_txt span {
+    font-size: x-large;
+  }
+  .index_main_container .container2 .image_2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .index_main_container .container2 .image_2 img {
+    width: 100%;
+    margin: auto;
+  }
+  .index_main_container .how_to h1 {
+    font-size: 28px;
+  }
+  .index_main_container .how_to span {
+    font-size: x-large;
+  }
+  .index_main_container .artistic_say h1 {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=all.css.map */
