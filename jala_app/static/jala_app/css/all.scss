@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+:root {
+    --green-1: #00ef86;
+    --green-2: #008eb9;
+    --blue-2: #3d00cc;
+    --blue-1: #008cff;
+    --purple-1: #5f36f4;
+    --purple-2: #3d2aa4;
+    --red-1: #ec3258;
+    --red-2: #c000b6;
+    --yellow-1: #fcda00;
+    --yellow-2: #ec3258;
+    --plan-color-1: var(--green-1);
+    --plan-color-2: var(--green-2);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 body{
     background: black;
@@ -10,13 +28,24 @@ body{
     margin: auto;
 }
 .index_main_container{
+    background: #141414;
     width: 100%;
     display: flex;
     flex-direction: column;
+    .distr{
+        background: black;
+        h2{
+            color: whitesmoke;
+            padding: 10px;
+            font-size: 58px;
+        }
+    }
     .first_cntent{
         width: 100%;
         background: #1b1b1b;
         padding: 30px;
+        background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+        animation: gradient 15s ease infinite;
         h1{
             text-align: center;
             padding: 10px;
@@ -87,15 +116,16 @@ body{
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
+        background: radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.85), #141414),radial-gradient(ellipse at top, var(--plan-color-1), transparent),radial-gradient(ellipse at bottom, var(--plan-color-2), transparent);
+        transition: all 50ms ease;
         .image_1{
             width: 40%;
             margin: auto;
-            padding: 10px;
+            padding: 15px;
             img{
                 width: 350px;
                 border-radius: 10px;
                 border: 2px solid rgba(0, 0, 0, 0.582);
-                padding: 20px;
             }
         }
         .container1_txt{
@@ -122,35 +152,82 @@ body{
     }
     .container2{
         display: flex;
-        width: 90%;
+        width: 100%;
         justify-content: space-between;
+        flex-direction: column;
+        padding: 30px;
         margin-top: 150px;
-        .container2_txt{
-            width: 50%;
+        background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+        animation: gradient 15s ease infinite;
+        .insider_container2{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h2{
-                text-align: center;
-                color: orange;
-                font-size: 38px;
-                padding: 10px;
+            justify-content: space-between;
+            padding: 20px;
+            .container2_txt{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                h2{
+                    text-align: center;
+                    color: orange;
+                    font-size: 38px;
+                    padding: 10px;
+                }
+                span{
+                    display: flex;
+                    text-align: center;
+                    word-spacing: 1.5px;
+                    font-size: 20px;
+                    color: whitesmoke;
+                }
             }
-            span{
-                text-align: center;
-                word-spacing: 1.5px;
-                font-size: 20px;
-                color: whitesmoke;
+            .image_2{
+                width: 40%;
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                }
             }
         }
-        .image_2{
-            width: 40%;
-            background: linear-gradient(to top left,rgba(0,0,0,0.1), rgba(0,0,0,0.2),rgba(0,0,0,0.3));
-            img{
-                border-radius: 10px;
-
+        .our_services{
+            margin: auto;
+            a{
+                padding: 10px;
+                background: orange;
+                color: whitesmoke;
+                border-radius: 40px;
+                font-size: large;
+                text-decoration: none;
+                width: 100%;
             }
+            a:hover{
+                background: black;
+                border: 1px solid orange;
+                transition: all ease-in-out .8s;
+            }
+        }
+    }
+    @keyframes gradient{
+        0%{
+            background-position: 0 50%;
+        }
+        20%{
+            background-position: 20% 50%;
+        }
+        40%{
+            background-position: 40% 50%;
+        }
+        60%{
+            background-position: 60% 50%;
+        }
+        80%{
+            background-position: 80% 50%;
+        }
+        100%{
+            background-position: 0 50%;
         }
     }
     .how_to{
@@ -174,10 +251,21 @@ body{
             font-size: xx-large;
             color: whitesmoke;
         }
-        ol{
-            background-color: red;
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            li{
+                list-style: none;
+                color: whitesmoke;
+                font-size: x-large;
+                padding: 10px;
+                color: orangered;
+            }
         }
         .start_now{
+            padding: 10px;
+            margin-top: 30px;
             a{
                 background: orange;
                 border: 1px solid orange;
@@ -203,7 +291,6 @@ body{
         align-items: center;
         margin-top: 40px;
         margin-bottom: 150px;
-        // background-color: #232223;
         height: 500px;
         h1{
             text-emphasis: none;
@@ -264,6 +351,13 @@ body{
 
 @media (max-width:1024px){
     .index_main_container{
+        .distr{
+            h2{
+                color: whitesmoke;
+                padding: 10px;
+                font-size: 28px;
+            }
+        }
         .first_cntent{
             h1{
                 font-size: 28px;
@@ -295,8 +389,10 @@ body{
             flex-direction: column;
             .image_1{
                 width: 100%;
+                display: flex;
                 img{
                     width: 350px;
+                    margin: auto;
                 }
             }
             .container1_txt{
@@ -334,9 +430,11 @@ body{
                 width: 100%;
                 justify-content: center;
                 align-items: center;
+                margin: auto;
                 img{
                     width: 100%;
                     margin: auto;
+                    display: none;
                 }
             }
         }
@@ -346,6 +444,12 @@ body{
             }
             span{
                 font-size: x-large;
+            }
+            ul{
+                flex-direction: column;
+                li{
+                    font-size: large;
+                }
             }
         }
         .artistic_say{

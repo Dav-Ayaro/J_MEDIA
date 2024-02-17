@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+:root {
+    --green-1: #00ef86;
+    --green-2: #008eb9;
+    --blue-2: #3d00cc;
+    --blue-1: #008cff;
+    --purple-1: #5f36f4;
+    --purple-2: #3d2aa4;
+    --red-1: #ec3258;
+    --red-2: #c000b6;
+    --yellow-1: #fcda00;
+    --yellow-2: #ec3258;
+    --plan-color-1: var(--green-1);
+    --plan-color-2: var(--green-2);
+}
 *, *::before, *::after{
     box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 body{
     // margin: 0;
@@ -10,9 +28,12 @@ body{
     position: fixed;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.89);
+    background: #000000e3;
+    align-items: center;
     z-index: 4;
+    max-width: 1400px;
     // .jala_logo{
     //     display: inline-block;
     //     // justify-content: space-evenly;
@@ -21,14 +42,25 @@ body{
     //         height: 100px;
     //     }
     // }
-    h1{
+    a{
+        text-decoration: none;
         color: orange;
+        font-size: 48px;
+    }
+    h2{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive;
+        padding: 0;
+        position: rela
+        ;
     }
     .index_header{
         width: 80%;
         ul{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 10px;
             li{
                 list-style: none;
@@ -40,6 +72,9 @@ body{
                 }
             }
         }
+    }
+    .menu_toggle{
+        display: none;
     }
 }
 .carousel{
@@ -73,13 +108,64 @@ body{
         color: whitesmoke;
         z-index: 3;
         text-align: center;
-        padding: 30px;
+        padding: 20px;
         font-size: 50px;
         background: linear-gradient(to top right, orange, #f5f5f573, rgba(207, 151, 48, 0.87), rgba(245, 245, 245, 0.959));
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
+section{
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    .first_imag{
+        width: 20%;
+        position: relative;
+        top: 250px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .second_img{
+        width: 35%;
+        position: relative;
+        top: 250px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .third_img{
+        width: 20%;
+        position: relative;
+        top: 250px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.jala__{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px;
+    background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+    animation: gradient 15s ease infinite;
+    h1{
+        font-size: 40px;
+        color: orange;
+        text-align: center;
+    }
+}
+
+
 .carousel > button{
     position: absolute;
     top: 50%;
@@ -109,13 +195,11 @@ button.next-btn{
 }
 
 footer{
-    // background: #232325;
-    // background-color: red;
-    // background: red;
-    // background-color: orange;
     padding: 30px 0 0 0;
     width: 100%;
     border-top: 1px solid orange;
+    background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+    animation: gradient 15s ease infinite;
     nav{
         display: flex;
         justify-content: space-between;
@@ -235,19 +319,16 @@ footer{
         #cookieBanner {
             position: fixed;
             bottom: 0;
-            // left: 30px;
             width: 100%;
             padding: 10px;
             background-color: #ffbb00d3;
             color: white;
             text-align: center;
             box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
-            // border-radius: 10px;
-            // height: 200px;
             display: flex;
-            // flex-direction: column;
             justify-content: center;
             align-items: center;
+            max-width: 1400px;
         }
 
         #cookieBanner p {
@@ -288,12 +369,42 @@ footer{
         margin: auto;
     }
 }
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    20%{
+        background-position: 20% 50%;
+    }
+    40%{
+        background-position: 40% 50%;
+    }
+    60%{
+        background-position: 60% 50%;
+    }
+    80%{
+        background-position: 80% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
 
 @media (max-width:1024px){
     .music_Home{
+        display: flex;
+        justify-content: space-between;
         .index_header{
             display: none;
         }   
+        .menu_toggle{
+            display: block;
+            font-size: 50px;
+            color: orange;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
     }
     .slide{
         display: none;
@@ -310,9 +421,11 @@ footer{
         nav{
             flex-direction: column-reverse;
             .main_footer{
+                display: flex;
                 img{
                     opacity: 0.4;
-                    width: 300px;
+                    width: 330px;
+                    margin: auto;
                 }
                 .social{
                     z-index: 3;
@@ -354,7 +467,6 @@ footer{
                 }
             }
             #cookieBanner{
-                // flex-direction: col;
                 flex: 1;
             }
             #cookieBanner button{

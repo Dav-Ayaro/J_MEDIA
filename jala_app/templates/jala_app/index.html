@@ -5,8 +5,6 @@
 {% block body %}
 
     <div class="index_main_container">
-        <h2> Music Theater </h2>
-
         <div class="first_cntent">
             <h1> JALA MEDIA </h1>
             <div class="text1">Sell Your Music On Every Streaming Platforms Worldwide keep 100% of Rights and Earnings Forever </div>
@@ -21,13 +19,13 @@
                 <div>BoomPlay</div>
             </div>
             <div class="text1"> <h3>More Than 250+ stores Worldwide</h3> </div>
-            <div class="distribute"> <a href ="https://forms.gle/paQ4mH2iYMKASAkg7" target="_blank">Start Selling Your Music</a> </div>
+            <div class="distribute"> <a href="{% url 'platform_page' %}"> VIEW ALL 250+ STORES </a> </div>
         </div>
 
         <!-- content1 -->
         <div class="container1">
             <div class="image_1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                <img src="{% static 'jala_app/images/jala5.jpeg' %}" alt="">
+                <img src="{% static 'jala_app/images/p1.png' %}" alt="">
             </div>
             <div class="container1_txt">
                 <h2> WHY JALA MEDIA </h2>
@@ -43,13 +41,19 @@
 
         <!-- content2 -->
         <div class="container2">
-            <div class="container2_txt">
-                <h2>JALA VIBE </h2>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi inventore voluptatibus, debitis, reprehenderit incidunt eligendi sed est quidem, suscipit quo odit aspernatur. Tempora ut incidunt expedita ex asperiores vitae doloremque.</span>
+            <div class="insider_container2">
+                <div class="container2_txt">
+                    <h2>JALA VIBE </h2>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi inventore voluptatibus, debitis, reprehenderit incidunt eligendi sed est quidem, suscipit quo odit aspernatur. Tempora ut incidunt expedita ex asperiores vitae doloremque.</span>
+                </div>
+                <div class="image_2">
+                    <img src="{% static 'jala_app/images/p5.png' %}" alt="">
+                </div>
             </div>
-            <div class="image_2">
-                <img src="{% static 'jala_app/images/jala2.webp' %}" alt="">
-            </div>
+
+            <div class="our_services">
+                <a href="{% url 'about_page' %}"> OUR SERVICES </a>
+            </div> 
         </div>
 
 
@@ -58,11 +62,11 @@
             <h1> HOW TO SELL YOUR MUSIC ONLINE </h1>
             <span>It’s never been easier to get your music on stores and streaming services, and start making money from your music. Follow these easy steps to get started:</span>
             <ul>
-                <li> UPLOAD YOUR MUSIC </li>
-                <li>WE SEND YOUR MUSIC TO STORES</li>
-                <li>YOU GET PAID</li>
+                <li>1:  UPLOAD YOUR MUSIC </li>
+                <li>2: WE SEND YOUR MUSIC TO STORES</li>
+                <li>3: YOU GET PAID</li>
             </ul>
-            <div class="start_now"><a href="https://forms.gle/paQ4mH2iYMKASAkg7" target="_blank">Start Now, Start Earning</a></div>
+            <div class="start_now"><a href="https://forms.gle/paQ4mH2iYMKASAkg7" target="_blank">START NOW, START EARNING</a></div>
         </div>
 
 
@@ -84,7 +88,10 @@
             <div class="whatsapp" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200">
                 <!-- <div class="chip"> <a href="https://wa.me/255754426055" target="_blank"> WhatsApp Us</a> </div> -->
                 <a href="https://wa.me/255768 583 328" target="_blank">
-                    <i class="fab fa-whatsapp"></i> 
+                    <!-- <i class="fab fa-whatsapp"></i>  -->
+                    <span class="material-symbols-outlined">
+                        chat
+                        </span>
                 </a>
                 </div>
         </div>
