@@ -107,6 +107,7 @@ body {
 .index_main_container .first_cntent .platform div {
   padding: 20px;
   font-weight: bolder;
+  cursor: pointer;
 }
 .index_main_container .first_cntent .platform div svg {
   width: 80px;
