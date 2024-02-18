@@ -102,17 +102,6 @@ body{
                 padding: 20px;
                 font-weight: bolder;
                 cursor: pointer;
-                svg{
-                    width: 80px;
-                    height: 40px;
-                    fill: orange;
-                }
-                svg:hover{
-                    transition: all .8s;
-                    width: 90;
-                    height: 45px;
-                    fill: coral;
-                }
             }
             div:hover{
                 font-size: 20px;
@@ -605,10 +594,8 @@ body{
                 background: #1b1b1b;
                 div{
                     color: whitesmoke;
-                    svg{
-                        width: 100px;
-                        height: 100px;
-                    }
+                    font-size: medium;
+                    width: max-content;
                 }
             }
         }

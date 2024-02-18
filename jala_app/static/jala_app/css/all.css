@@ -109,17 +109,6 @@ body {
   font-weight: bolder;
   cursor: pointer;
 }
-.index_main_container .first_cntent .platform div svg {
-  width: 80px;
-  height: 40px;
-  fill: orange;
-}
-.index_main_container .first_cntent .platform div svg:hover {
-  transition: all 0.8s;
-  width: 90;
-  height: 45px;
-  fill: coral;
-}
 .index_main_container .first_cntent .platform div:hover {
   font-size: 20px;
   transition: all 0.8s;
@@ -581,10 +570,9 @@ body {
   }
   .index_main_container .first_cntent .platform div {
     color: whitesmoke;
-  }
-  .index_main_container .first_cntent .platform div svg {
-    width: 100px;
-    height: 100px;
+    font-size: medium;
+    width: -moz-max-content;
+    width: max-content;
   }
   .index_main_container .container1 {
     flex-direction: column;
