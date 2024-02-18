@@ -53,3 +53,12 @@ def pricing_page(request):
 def platform_page(request):
     return object.render_view(request, view_file='jala_app/platform.html')
 
+def services_page(request):
+    return object.render_view(request, view_file='jala_app/services.html')
+
+def why_us_page(request):
+    return object.render_view(request, view_file='jala_app/why_us.html')
+
+def contact_us_page(request):
+    return object.render_view(request, view_file='jala_app/contact.html')
+

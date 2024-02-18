@@ -1,53 +1,44 @@
+{% extends 'jala_app/extension/header.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JALA MEDIA - Digital Music Distributor </title>
-    <link rel="shortcut icon" href="{% static 'jala_app/images/JALAM.png' %}" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'jala_app/css/allin.css' %}">
-    <link rel="stylesheet" href="{% static 'jala_app/fa/css/all.css' %}">
-    <link rel="stylesheet" href="{% static 'jala_app/css/all.css' %}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="{% static 'jala_app/js/slider.js' %}"></script>
-</head>
-<body>
-    <div class="music_Home">
-        <div class="jala_logo">
-            <h1> <a href="{% url 'index_page' %}"> Jala Media </a> </h1>
-            <!-- <h2>Entertainment</h2> -->
-            <!-- <img src="{% static 'jala_app/images/JALAM.png' %}" alt=""> -->
-        </div>
-        <div class="index_header">
-            <ul class="menu">
-                <li> <a href="{% url 'about_page' %}">About Us</a> </li>
-                <li> <a href="{% url 'artist_page' %}">Our Artist</a> </li>
-                <li> <a href="{% url 'platform_page' %}">Platforms</a> </li>
-                <li> <a href="{% url 'pricing_page' %}">Pricing</a> </li>
-                <li> <a href=""> why US</a> </li>
-                <li> <a href=""> Contact Us </a> </li>
-            </ul>
-        </div>
-        <button class="menu_toggle">&#9776;</button>
-    </div>
-    <div class="carousel" data-carousel>
-        <button class="prev-btn" data_c_button="prev">&#8656;</button>
-        <button class="next-btn" data_c_button="next">&#8658;</button>
-        <section arial-label="newest photo">
-            <ul data-slides>
-                <li class="slide">
-                    <img src="{% static 'jala_app/images/jala2.webp' %}" alt="">
-                </li>
-            </ul>
-        </section>
-<div class="distr"><h2> Digital Music Distributor </h2></div>
 
 {% block body %}
-
-<h1> Price </h1>
-
-
+<div class="index_main_container">
+    <div class="all_container">
+        <div class="pricing_container">
+            <div class="price_head">
+                <h1> Pricing</h1>
+            </div> 
+        </div>
+        <div class="jala_media_prices">
+            <h1> JALA MEDIA AFFORDABLE PRICESS</h1>
+            <span>
+                As jala media Company we provide all the services for affordable and reasonable prices where your music will be distributed to all platforms, get your Catalog, Collection of Loyalties etc.
+            </span>
+            <div class="price_table">
+                <table> 
+                    <tr>
+                        <th>TYPE</th>
+                        <th>AMMOUNT(TZS)</th>
+                        <th>AMMOUNT(USD)</th>
+                    </tr>
+                    <tr>
+                        <td>SINGLE</td>
+                        <td>Tsh 20,000/=</td>
+                        <td>10$</td>
+                    </tr>
+                    <tr>
+                        <td>EP(5 OR LESS SONGS)</td>
+                        <td>Tsh 50,000/=</td>
+                        <td>20$</td>
+                    </tr>
+                    <tr>
+                        <td>ALBUM(18 OR LESS SONGS)</td>
+                        <td>Tsh 100,000/=</td>
+                        <td>50$</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

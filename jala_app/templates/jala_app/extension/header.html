@@ -1,12 +1,103 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JALA MEDIA</title>
+    <title>JALA MEDIA - Digital Music Distributor </title>
+    <link rel="shortcut icon" href="{% static 'jala_app/images/JALAM.png' %}" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'jala_app/css/allin.css' %}">
+    <link rel="stylesheet" href="{% static 'jala_app/fa/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'jala_app/css/all.css' %}">
+    <script src="{% static 'jala_app/js/slider.js' %}"></script>
 </head>
 <body>
-    <h1>sell your music with us </h1>
+    <div class="music_Home">
+        <div class="jala_logo">
+            <h1> <a href="{% url 'index_page' %}"> Jala Media </a> </h1>
+        </div>
+        <div class="index_header">
+            <ul class="menu">
+                <li> <a href="{% url 'about_page' %}">About Us</a> </li>
+                <li> <a href="{% url 'artist_page' %}">Our Artist</a> </li>
+                <li> <a href="{% url 'services_page' %}"> Our Services </a> </li>
+                <li> <a href="{% url 'platform_page' %}">Platforms</a> </li>
+                <li> <a href="{% url 'pricing_page' %}">Pricing</a> </li>
+                <li> <a href="{% url 'why_us_page' %}"> why US</a> </li>
+                <li> <a href="{% url 'contact_us_page' %}"> Contact Us </a> </li>
+            </ul>
+        </div>
+        <button class="menu_toggle">&#9776;</button>
+    </div>
+
+{% block body %}
+
+{% endblock %}
+
+<footer>
+    <nav>
+        <div class="main_footer" data-aos="fade-down" data-aos-duration="500" data-aos-delay="200">
+            <img src="{% static 'jala_app/images/jala9.jpeg' %}" alt="">
+            <!-- <div class="social">
+                <div>Instagram</div>
+                <div>Facebook</div>
+                <div>Tiktok</div>
+                <div>Thread</div>
+                <div>Twotter</div>
+            </div> -->
+        </div>
+        <div class="quick_links">
+            <div class="quick_l">
+                <ul>
+                    <h1>Alt Links</h1>
+                    <li> <a href="{% url 'index_page' %}">Home</a> </li>
+                        <li> <a href="{% url 'about_page' %}">About Us</a> </li>
+                        <li> <a href="{% url 'services_page' %}"> Our Services </a> </li>
+                        <li> <a href="{% url 'pricing_page' %}"> Pricing </a> </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h1> Resources </h1>
+                <div> <a href="{% url 'index_page' %}"> Blogs</a> </div>
+                    <div> <a href="mailto:jalamediaentertainment@gmail.com">Mail Us</a> </div>
+                    <div> <a href="https://wa.me/255768 583 328" target="_blank"> Whatsapp</a> </div>
+                    <div> <a href="tel:+255768 583 328">Make a Call</a> </div>
+            </div>
+
+            <div class="under_img" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="{% static 'jala_app/images/art.jpeg' %}" alt="">
+            </div>
+        </div>
+        <div class="connect_with_us">
+            <div class="jala_media" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"><img src="{% static 'jala_app/images/JALAM.png' %}" alt=""> </div>
+            <div class="our_social">
+                <h4>connect with Us</h4>
+                <div class="net_us" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
+                    <a href="https://instagram.com/jala_media" target="_blank"> <i class="fab fa-instagram"></i> </a>  </div>
+                <div class="net_us" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+                    <a href="https://twitter.com/jala_media" target="_blank"> <i class="fab fa-twitter"></i></a>  </div>
+                <div class="net_us" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1400">
+                    <a href="https://facebook.com/jala_media" target="_blank"> <i class="fab fa-facebook"></i></a>  </div>
+                <div class="net_us" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="2000">
+                    <a href="https://tiktok.com/jala_media" target="_blank"> <i class="fab fa-tiktok"></i></a>   </div>
+            </div>
+        </div>
+        <!-- <div id="cookieBanner" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
+            <p>This website uses cookies. By using this site, you agree to our use of cookies.</p>
+            <button id="acceptCookies">ACCEPT</button>
+            <button id="rejectCookies">REJECT</button>
+        </div> -->
+        
+    </nav>
+    <span> All Rights Reserved @JALA MEDIA INTERTAIMENT 2015 - 2024 </span>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init(); </script>
+<script src="/static/jala_app/js/cookies.js"> </script>
+<script src="/static/jala_app/js/sidebar.js"> </script>
+
 </body>
 </html>

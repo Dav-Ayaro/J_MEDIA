@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 :root {
     --green-1: #00ef86;
     --green-2: #008eb9;
@@ -17,7 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Anta", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -98,11 +97,25 @@ body{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            background-color: #f5f5f5b4;
             border-radius: 5px;
             div{
                 padding: 20px;
                 font-weight: bolder;
+                svg{
+                    width: 80px;
+                    height: 40px;
+                    fill: orange;
+                }
+                svg:hover{
+                    transition: all .8s;
+                    width: 90;
+                    height: 45px;
+                    fill: coral;
+                }
+            }
+            div:hover{
+                font-size: 20px;
+                transition: all .8s;
             }
         }
     }
@@ -111,11 +124,8 @@ body{
         width: 95%;
         justify-content: space-between;
         margin: auto;
-        margin-top: 150px;
-        background: url(../images/jala3.webp) no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
+        margin-top: 0;
+        padding: 100px 20px 60px 0px;
         background: radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.85), #141414),radial-gradient(ellipse at top, var(--plan-color-1), transparent),radial-gradient(ellipse at bottom, var(--plan-color-2), transparent);
         transition: all 50ms ease;
         .image_1{
@@ -156,7 +166,7 @@ body{
         justify-content: space-between;
         flex-direction: column;
         padding: 30px;
-        margin-top: 150px;
+        // margin-top: 150px;
         background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
         animation: gradient 15s ease infinite;
         .insider_container2{
@@ -170,17 +180,17 @@ body{
                 justify-content: center;
                 align-items: center;
                 margin: auto;
-                h2{
+                h1{
                     text-align: center;
                     color: orange;
-                    font-size: 38px;
+                    font-size: 50px;
                     padding: 10px;
                 }
                 span{
                     display: flex;
                     text-align: center;
                     word-spacing: 1.5px;
-                    font-size: 20px;
+                    font-size: xx-large;
                     color: whitesmoke;
                 }
             }
@@ -193,7 +203,11 @@ body{
             }
         }
         .our_services{
-            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
             a{
                 padding: 10px;
                 background: orange;
@@ -201,7 +215,8 @@ body{
                 border-radius: 40px;
                 font-size: large;
                 text-decoration: none;
-                width: 100%;
+                width: 20%;
+                text-align: center;
             }
             a:hover{
                 background: black;
@@ -260,7 +275,7 @@ body{
                 color: whitesmoke;
                 font-size: x-large;
                 padding: 10px;
-                color: orangered;
+                // color: orangered;
             }
         }
         .start_now{
@@ -347,6 +362,212 @@ body{
             }
         }
     }
+    //all_pages_container
+    .all_container{
+        margin-top: 75px;
+        //About us
+        .about_container{
+            background: url(../images/SW66.jpg) no-repeat;
+            background-size: cover;
+            background-position: 10% 60%;
+            height: 50vh;
+            opacity: 0.9;
+        }
+        //platforms
+        .platform_container{
+            // margin-top: 75px;
+            background: url(../images/sw12.jpg) no-repeat;
+            background-size: cover;
+            background-position: 10% 30%;
+            height: 100vh;
+            opacity: 0.9;
+            .platform_head{
+                width: 40%;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                h1{
+                    color: #1b1b1b;
+                    font-weight: bold;
+                    font-size: 50px;
+                    border-bottom: 2px solid #ffa500;
+                    width: 40%;
+                    font-weight: bold;
+                }
+            }
+        }
+        //Artist
+        .artist_container{
+            background: url(../images/sw55.jpg) no-repeat;
+            background-size: cover;
+            background-position: 10% 30%;
+            height: 100vh;
+            opacity: 0.9;
+        }
+
+        //our services
+        .service_container{
+            background: url(../images/SW13.jpg) no-repeat;
+            background-size: cover;
+            background-position: 10% 30%;
+            height: 100vh;
+            opacity: 0.9;
+            .service_head{
+                width: 80%;
+                height: 30%;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                h1{
+                    color: whitesmoke;
+                    font-weight: bold;
+                    font-size: 50px;
+                    border-bottom: 2px solid #ffa500;
+                    width: 40%;
+                    font-weight: bold;
+                }
+            }
+        }
+        //services extended
+        .services{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 30px;
+            background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+            animation: gradient 15s ease infinite;
+            .__service{
+                width: 80%;
+                margin: auto;
+                padding: 20px;
+                text-align: justify;
+                h2{
+                    color: orange;
+                    font-size: 45px;
+                }
+                span{
+                    color: whitesmoke;
+                    font-size: xx-large;
+                    // padding: 30px;
+                }
+            }
+        }
+
+        //pricing
+        .pricing_container{
+            background: url(../images/sw55.jpg) no-repeat;
+            background-size: cover;
+            background-position: 10% 30%;
+            height: 100vh;
+            opacity: 0.9;
+            .price_head{
+                width: 40%;
+                height: 30%;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                h1{
+                    color: whitesmoke;
+                    font-weight: bold;
+                    font-size: 50px;
+                    border-bottom: 2px solid #ffa500;
+                    width: 40%;
+                    font-weight: bold;
+                }
+            }
+        }
+        //pricing extended
+        .jala_media_prices{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+            animation: gradient 15s ease infinite;
+            h1{
+                text-align: center;
+                font-size: 40px;
+                color: orange;
+            }
+            span{
+                text-align: center;
+                font-size: xx-large;
+                width: 60%;
+                margin: auto;
+                padding: 10px;
+                color: whitesmoke;
+            }
+            .price_table{
+                margin: auto;
+                padding: 30px;
+                width: 100%;
+                table{
+                    border: 1px solid #141414;
+                    width: 80%;
+                    margin: auto;
+                    // padding: 10px;
+                    tr{
+                        th,td{
+                            border: 1px solid #141414;
+                            color: whitesmoke;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        //why us
+        .why_us_container{
+            background: url(../images/SW66.jpg) no-repeat;
+            background-size: cover;
+            background-position: 10% 30%;
+            height: 80vh;
+            opacity: 0.9;
+            .why_us_head{
+                width: 40%;
+                height: 30%;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                h1{
+                    color: whitesmoke;
+                    font-weight: bold;
+                    font-size: 50px;
+                    border-bottom: 2px solid #ffa500;
+                    width: 40%;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        //contact us
+        .contact_container{
+            background: url(../images/sw1.jpg) no-repeat;
+            background-size: cover;
+            background-position: 20% 90%;
+            height: 80vh;
+            opacity: 0.9;
+            .contact_head{
+                width: 40%;
+                height: 30%;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                h1{
+                    color: whitesmoke;
+                    font-weight: bold;
+                    font-size: 50px;
+                    border-bottom: 3px solid #ffa500;
+                    width: 40%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:1024px){
@@ -373,6 +594,7 @@ body{
                 width: 100%;
                 a{
                     width: 100%;
+                    font-size: large;
                 }
             }
             .platform{
@@ -382,6 +604,10 @@ body{
                 background: #1b1b1b;
                 div{
                     color: whitesmoke;
+                    svg{
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
         }
@@ -412,29 +638,42 @@ body{
             }
         }
         .container2{
-            flex-direction: column-reverse;
+            flex-direction: column;
             display: flex;
+            width: 100%;
             margin: auto;
             margin-top: 100px;
-            .container2_txt{
+            .insider_container2{
+                flex-direction: column;
                 width: 100%;
-                h2{
-                    font-size: 28px;
+                .container2_txt{
+                    width: 100%;
+                    h1{
+                        font-size: 38px;
+                    }
+                    span{
+                        font-size: x-large;
+                    }
                 }
-                span{
-                    font-size: x-large;
+                .image_2{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    img{
+                        width: 300%;
+                        margin: auto;
+                        // display: none;
+                    }
                 }
             }
-            .image_2{
-                display: flex;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                margin: auto;
-                img{
-                    width: 100%;
-                    margin: auto;
-                    display: none;
+            .our_services{
+                flex-direction: column;
+                a{
+                    width: 60%;
+                    font-weight: bold;
+                    font-size: large;
                 }
             }
         }
@@ -451,6 +690,11 @@ body{
                     font-size: large;
                 }
             }
+            .start_now{
+                a{
+                    font-size: large;
+                }
+            }
         }
         .artistic_say{
             h1{
@@ -458,6 +702,75 @@ body{
                 font-size: 20px;
             }
         }
-    }
+        .all_container{
+            //our services
+            .service_container{
+                // background: center 50%;
+                height: 80vh;
+                .service_head{
+                    width: 100%;
+                    h1{
+                        width: 50%;
+                        font-size: 28px;
+                    }
+                }
+            }
+            //services extended
+            .services{
+                width: 100%;
+                .__service{
+                    width: 100%;
+                    h2{
+                        font-size: 23px;
+                        text-align: unset;
+                    }
+                    span{
+                        font-size: large;
+                    }
+                }
+            }
+            //pricing
+            .pricing_container{
+                background-position: center 10%;
+                height: 80vh;
+                .price_head{
+                    width: 100%;
+                    h1{
+                        font-size: 28px;
+                    }
+                }
+            }
+            //pricing extended
+            .jala_media_prices{
+                width: 100%;
+                h1{
+                    font-size: 28px;
+                }
+                span{
+                    font-size: large;
+                    width: 95%;
+                }
+                .price_table{
+                    overflow-x: scroll;
+                    padding: 0;
+                    table{
+                        width: 100%;
+                        tr{
+                            width: 100%;
+                            th,td{
+                                padding: 5px;
+                                font-size: medium;
+                                width: 100%;
+                            }
+                            td{
+                                text-transform: lowercase;
+                                font-size: large;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
 }
 

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 :root {
   --green-1: #00ef86;
   --green-2: #008eb9;
@@ -18,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Anta", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -103,23 +102,34 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgba(245, 245, 245, 0.7058823529);
   border-radius: 5px;
 }
 .index_main_container .first_cntent .platform div {
   padding: 20px;
   font-weight: bolder;
 }
+.index_main_container .first_cntent .platform div svg {
+  width: 80px;
+  height: 40px;
+  fill: orange;
+}
+.index_main_container .first_cntent .platform div svg:hover {
+  transition: all 0.8s;
+  width: 90;
+  height: 45px;
+  fill: coral;
+}
+.index_main_container .first_cntent .platform div:hover {
+  font-size: 20px;
+  transition: all 0.8s;
+}
 .index_main_container .container1 {
   display: flex;
   width: 95%;
   justify-content: space-between;
   margin: auto;
-  margin-top: 150px;
-  background: url(../images/jala3.webp) no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  margin-top: 0;
+  padding: 100px 20px 60px 0px;
   background: radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.85), #141414), radial-gradient(ellipse at top, var(--plan-color-1), transparent), radial-gradient(ellipse at bottom, var(--plan-color-2), transparent);
   transition: all 50ms ease;
 }
@@ -160,7 +170,6 @@ body {
   justify-content: space-between;
   flex-direction: column;
   padding: 30px;
-  margin-top: 150px;
   background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414), center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
   animation: gradient 15s ease infinite;
 }
@@ -177,17 +186,17 @@ body {
   align-items: center;
   margin: auto;
 }
-.index_main_container .container2 .insider_container2 .container2_txt h2 {
+.index_main_container .container2 .insider_container2 .container2_txt h1 {
   text-align: center;
   color: orange;
-  font-size: 38px;
+  font-size: 50px;
   padding: 10px;
 }
 .index_main_container .container2 .insider_container2 .container2_txt span {
   display: flex;
   text-align: center;
   word-spacing: 1.5px;
-  font-size: 20px;
+  font-size: xx-large;
   color: whitesmoke;
 }
 .index_main_container .container2 .insider_container2 .image_2 {
@@ -198,7 +207,11 @@ body {
   width: 100%;
 }
 .index_main_container .container2 .our_services {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 .index_main_container .container2 .our_services a {
   padding: 10px;
@@ -207,7 +220,8 @@ body {
   border-radius: 40px;
   font-size: large;
   text-decoration: none;
-  width: 100%;
+  width: 20%;
+  text-align: center;
 }
 .index_main_container .container2 .our_services a:hover {
   background: black;
@@ -266,7 +280,6 @@ body {
   color: whitesmoke;
   font-size: x-large;
   padding: 10px;
-  color: orangered;
 }
 .index_main_container .how_to .start_now {
   padding: 10px;
@@ -348,6 +361,193 @@ body {
   font-size: 70px;
   color: green;
 }
+.index_main_container .all_container {
+  margin-top: 75px;
+}
+.index_main_container .all_container .about_container {
+  background: url(../images/SW66.jpg) no-repeat;
+  background-size: cover;
+  background-position: 10% 60%;
+  height: 50vh;
+  opacity: 0.9;
+}
+.index_main_container .all_container .platform_container {
+  background: url(../images/sw12.jpg) no-repeat;
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 100vh;
+  opacity: 0.9;
+}
+.index_main_container .all_container .platform_container .platform_head {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.index_main_container .all_container .platform_container .platform_head h1 {
+  color: #1b1b1b;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 2px solid #ffa500;
+  width: 40%;
+  font-weight: bold;
+}
+.index_main_container .all_container .artist_container {
+  background: url(../images/sw55.jpg) no-repeat;
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 100vh;
+  opacity: 0.9;
+}
+.index_main_container .all_container .service_container {
+  background: url(../images/SW13.jpg) no-repeat;
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 100vh;
+  opacity: 0.9;
+}
+.index_main_container .all_container .service_container .service_head {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.index_main_container .all_container .service_container .service_head h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 2px solid #ffa500;
+  width: 40%;
+  font-weight: bold;
+}
+.index_main_container .all_container .services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414), center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+  animation: gradient 15s ease infinite;
+}
+.index_main_container .all_container .services .__service {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+}
+.index_main_container .all_container .services .__service h2 {
+  color: orange;
+  font-size: 45px;
+}
+.index_main_container .all_container .services .__service span {
+  color: whitesmoke;
+  font-size: xx-large;
+}
+.index_main_container .all_container .pricing_container {
+  background: url(../images/sw55.jpg) no-repeat;
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 100vh;
+  opacity: 0.9;
+}
+.index_main_container .all_container .pricing_container .price_head {
+  width: 40%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.index_main_container .all_container .pricing_container .price_head h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 2px solid #ffa500;
+  width: 40%;
+  font-weight: bold;
+}
+.index_main_container .all_container .jala_media_prices {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414), center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
+  animation: gradient 15s ease infinite;
+}
+.index_main_container .all_container .jala_media_prices h1 {
+  text-align: center;
+  font-size: 40px;
+  color: orange;
+}
+.index_main_container .all_container .jala_media_prices span {
+  text-align: center;
+  font-size: xx-large;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  color: whitesmoke;
+}
+.index_main_container .all_container .jala_media_prices .price_table {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+}
+.index_main_container .all_container .jala_media_prices .price_table table {
+  border: 1px solid #141414;
+  width: 80%;
+  margin: auto;
+}
+.index_main_container .all_container .jala_media_prices .price_table table tr th, .index_main_container .all_container .jala_media_prices .price_table table tr td {
+  border: 1px solid #141414;
+  color: whitesmoke;
+  padding: 15px;
+}
+.index_main_container .all_container .why_us_container {
+  background: url(../images/SW66.jpg) no-repeat;
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 80vh;
+  opacity: 0.9;
+}
+.index_main_container .all_container .why_us_container .why_us_head {
+  width: 40%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.index_main_container .all_container .why_us_container .why_us_head h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 2px solid #ffa500;
+  width: 40%;
+  font-weight: bold;
+}
+.index_main_container .all_container .contact_container {
+  background: url(../images/sw1.jpg) no-repeat;
+  background-size: cover;
+  background-position: 20% 90%;
+  height: 80vh;
+  opacity: 0.9;
+}
+.index_main_container .all_container .contact_container .contact_head {
+  width: 40%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.index_main_container .all_container .contact_container .contact_head h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 3px solid #ffa500;
+  width: 40%;
+  font-weight: bold;
+}
 
 @media (max-width: 1024px) {
   .index_main_container .distr h2 {
@@ -370,6 +570,7 @@ body {
   }
   .index_main_container .first_cntent .distribute a {
     width: 100%;
+    font-size: large;
   }
   .index_main_container .first_cntent .platform {
     flex-wrap: nowrap;
@@ -379,6 +580,10 @@ body {
   }
   .index_main_container .first_cntent .platform div {
     color: whitesmoke;
+  }
+  .index_main_container .first_cntent .platform div svg {
+    width: 100px;
+    height: 100px;
   }
   .index_main_container .container1 {
     flex-direction: column;
@@ -407,31 +612,43 @@ body {
     text-align: center;
   }
   .index_main_container .container2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: flex;
+    width: 100%;
     margin: auto;
     margin-top: 100px;
   }
-  .index_main_container .container2 .container2_txt {
+  .index_main_container .container2 .insider_container2 {
+    flex-direction: column;
     width: 100%;
   }
-  .index_main_container .container2 .container2_txt h2 {
-    font-size: 28px;
+  .index_main_container .container2 .insider_container2 .container2_txt {
+    width: 100%;
   }
-  .index_main_container .container2 .container2_txt span {
+  .index_main_container .container2 .insider_container2 .container2_txt h1 {
+    font-size: 38px;
+  }
+  .index_main_container .container2 .insider_container2 .container2_txt span {
     font-size: x-large;
   }
-  .index_main_container .container2 .image_2 {
+  .index_main_container .container2 .insider_container2 .image_2 {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin: auto;
   }
-  .index_main_container .container2 .image_2 img {
-    width: 100%;
+  .index_main_container .container2 .insider_container2 .image_2 img {
+    width: 300%;
     margin: auto;
-    display: none;
+  }
+  .index_main_container .container2 .our_services {
+    flex-direction: column;
+  }
+  .index_main_container .container2 .our_services a {
+    width: 60%;
+    font-weight: bold;
+    font-size: large;
   }
   .index_main_container .how_to h1 {
     font-size: 28px;
@@ -445,7 +662,72 @@ body {
   .index_main_container .how_to ul li {
     font-size: large;
   }
+  .index_main_container .how_to .start_now a {
+    font-size: large;
+  }
   .index_main_container .artistic_say h1 {
     font-size: 20px;
+  }
+  .index_main_container .all_container .service_container {
+    height: 80vh;
+  }
+  .index_main_container .all_container .service_container .service_head {
+    width: 100%;
+  }
+  .index_main_container .all_container .service_container .service_head h1 {
+    width: 50%;
+    font-size: 28px;
+  }
+  .index_main_container .all_container .services {
+    width: 100%;
+  }
+  .index_main_container .all_container .services .__service {
+    width: 100%;
+  }
+  .index_main_container .all_container .services .__service h2 {
+    font-size: 23px;
+    text-align: unset;
+  }
+  .index_main_container .all_container .services .__service span {
+    font-size: large;
+  }
+  .index_main_container .all_container .pricing_container {
+    background-position: center 10%;
+    height: 80vh;
+  }
+  .index_main_container .all_container .pricing_container .price_head {
+    width: 100%;
+  }
+  .index_main_container .all_container .pricing_container .price_head h1 {
+    font-size: 28px;
+  }
+  .index_main_container .all_container .jala_media_prices {
+    width: 100%;
+  }
+  .index_main_container .all_container .jala_media_prices h1 {
+    font-size: 28px;
+  }
+  .index_main_container .all_container .jala_media_prices span {
+    font-size: large;
+    width: 95%;
+  }
+  .index_main_container .all_container .jala_media_prices .price_table {
+    overflow-x: scroll;
+    padding: 0;
+  }
+  .index_main_container .all_container .jala_media_prices .price_table table {
+    width: 100%;
+  }
+  .index_main_container .all_container .jala_media_prices .price_table table tr {
+    width: 100%;
+  }
+  .index_main_container .all_container .jala_media_prices .price_table table tr th, .index_main_container .all_container .jala_media_prices .price_table table tr td {
+    padding: 5px;
+    font-size: medium;
+    width: 100%;
+  }
+  .index_main_container .all_container .jala_media_prices .price_table table tr td {
+    text-transform: lowercase;
+    font-size: large;
   }
 }/*# sourceMappingURL=all.css.map */
