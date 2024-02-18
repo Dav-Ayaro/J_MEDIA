@@ -582,7 +582,7 @@ body {
     display: flex;
   }
   .index_main_container .container1 .image_1 img {
-    width: 350px;
+    width: 100%;
     margin: auto;
   }
   .index_main_container .container1 .container1_txt {

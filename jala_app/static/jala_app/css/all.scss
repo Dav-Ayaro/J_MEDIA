@@ -605,7 +605,8 @@ body{
                 width: 100%;
                 display: flex;
                 img{
-                    width: 350px;
+                    width: 100%;
+                    // width: 350px;
                     margin: auto;
                 }
             }
@@ -691,9 +692,7 @@ body{
             }
         }
         .all_container{
-            //our services
             .service_container{
-                // background: center 50%;
                 height: 80vh;
                 .service_head{
                     width: 100%;
