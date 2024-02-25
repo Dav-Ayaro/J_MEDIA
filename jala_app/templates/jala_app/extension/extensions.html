@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JALA MEDIA - Digital Music Distributor </title>
     <link rel="shortcut icon" href="{% static 'jala_app/images/JALAM.png' %}" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'jala_app/css/allin.css' %}">
     <link rel="stylesheet" href="{% static 'jala_app/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'jala_app/fa/css/all.min.css' %}">
     <link rel="stylesheet" href="{% static 'jala_app/fa/css/all.css' %}">
-    <script src="{% static 'jala_app/js/slider.js' %}"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'jala_app/fa/css/brands.css' %}">
 </head>
 <body>
     <div class="music_Home">
         <div class="jala_logo">
             <h1> <a href="{% url 'index_page' %}"> Jala Media </a> </h1>
         </div>
+        <div class="overlay" id="overlay"></div>
         <div class="index_header">
             <ul class="menu">
+                <span class="menu-close" >&#10005;</span>
                 <li> <a href="{% url 'about_page' %}">About Us</a> </li>
                 <li> <a href="{% url 'artist_page' %}">Our Artist</a> </li>
                 <li> <a href="{% url 'services_page' %}"> Our Services </a> </li>
@@ -29,31 +32,34 @@
                 <li> <a href="{% url 'contact_us_page' %}"> Contact Us </a> </li>
             </ul>
         </div>
-        <button class="menu_toggle">&#9776;</button>
+        <button class="menu_toggle" id="menu-icon">&#9776;</button>
     </div>
+    
+    
     <div class="carousel" data-carousel>
         <button class="prev-btn" data_c_button="prev">&#8656;</button>
         <button class="next-btn" data_c_button="next">&#8658;</button>
         <section arial-label="newest photo">
             <ul data-slides>
-                <li class="slide" data-active>
+                <!-- <li class="slide" data-active>
                     <img src="{% static 'jala_app/images/jala1.jpeg' %}" alt="">
                 </li>
                 <li class="slide">
                     <img src="{% static 'jala_app/images/jala2.webp' %}" alt="">
-                    <!-- <h1 class="typing_automatically"></h1> -->
                 </li>
                 <li class="slide">
                     <img src="{% static 'jala_app/images/jala6.webp' %}" alt="">
-                </li>
-                <!-- <li class="slide">
-                    <img src="{% static 'jala_app/images/sw44.jpg' %}" alt="">
                 </li> -->
+                    <li class="slide">
+                    <img src="{% static 'jala_app/images/sw44.jpg' %}" alt="">
+                    <h1> Build Your Career</h1>
+                    <h5>Make Living From Your Talent</h5>
+                </li>
             </ul>
         </section>
     </div>
             <!-- typing words -->
-            <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+            <!-- <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
         <script>
             var Typed = new Typed(".typing_automatically", {
                 strings: ["SELL YOUR MUSIC WORLWIDE","KEEP EARNING FOREVER", "KEEP 100% OF YOUR PATENT RIGHTS"],
@@ -61,7 +67,7 @@
                 backSpeed: 50,
                 loop: true
             });
-        </script>
+        </script> -->
     {% block body %}
 
     {% endblock %}
@@ -97,13 +103,25 @@
                 <div class="our_social">
                     <h4>connect with Us</h4>
                     <div class="net_us" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
-                        <a href="https://instagram.com/jala_media" target="_blank"> <i class="fab fa-instagram"></i> </a>  </div>
+                        <a href="https://instagram.com/jala_media" target="_blank"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>  
+                        </a>  
+                    </div>
                     <div class="net_us" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
-                        <a href="https://twitter.com/jala_media" target="_blank"> <i class="fab fa-twitter"></i></a>  </div>
+                        <a href="https://twitter.com/jala_media" target="_blank"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+                        </a>  
+                    </div>
                     <div class="net_us" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1400">
-                        <a href="https://facebook.com/jala_media" target="_blank"> <i class="fab fa-facebook"></i></a>  </div>
+                        <a href="https://facebook.com/jala_media" target="_blank"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                        </a>  
+                    </div>
                     <div class="net_us" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="2000">
-                        <a href="https://tiktok.com/jala_media" target="_blank"> <i class="fab fa-tiktok"></i></a>   </div>
+                        <a href="https://tiktok.com/jala_media" target="_blank"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                        </a> 
+                        </div>
                 </div>
             </div>
             <div id="cookieBanner" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
@@ -113,13 +131,24 @@
             </div>
             
         </nav>
-        <span> All Rights Reserved @JALA MEDIA INTERTAIMENT 2015 - 2024 </span>
+        <span> All Rights Reserved @JALA MEDIA ENTERTAINMENT </span>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
     <script src="/static/jala_app/js/cookies.js"> </script>
     <script src="/static/jala_app/js/sidebar.js"> </script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2000, // Adjust the speed as needed
+            dots: true, // Show navigation dots
+            infinite: true, // Loop the slideshow
+            speed: 500 // Transition speed in milliseconds
+            });
+        });
+    </script>
 
 </body>
 </html>

@@ -12,6 +12,18 @@
     --plan-color-1: var(--green-1);
     --plan-color-2: var(--green-2);
 }
+
+@mixin overlay_funct{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1; 
+    display: none; 
+}
+
 *, *::before, *::after{
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,6 +34,20 @@
 body{
     max-width: 1400px;
     margin: auto;
+
+    .check_slider{
+        width: 100%;
+        height: 100vh;
+        // background: blue;
+        .slider{
+            width: 100%;
+            height: auto;
+            img{
+                height: 100vh;
+                width: 100%;
+            }
+        }
+    }
 }
 .music_Home{
     position: fixed;
@@ -29,7 +55,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    // background: #000000e3;
+    background: #000000e3;
     align-items: center;
     z-index: 4;
     max-width: 1400px;
@@ -72,7 +98,25 @@ body{
     .menu_toggle{
         display: none;
     }
+    .menu-close{
+        display: none;
+    }
 }
+
+// .check_slider{
+//     width: 100%;
+//     .slider{
+//         width: inherit;
+//         height: 10vh;
+//         div{
+//             img{
+//                 width: 80%;
+//                 height: 10%;
+//             }
+//         }
+//     }
+// }
+
 .carousel{
     height: 100vh;
     position: relative;
@@ -102,38 +146,27 @@ body{
     height: 100%;
     h1{
         color: whitesmoke;
-        z-index: 3;
-        text-align: center;
-        padding: 20px;
+        z-index: 999;
+        text-align: right;
+        padding: 10px;
         font-size: 50px;
-        background: linear-gradient(to top right, orange, #f5f5f573, rgba(207, 151, 48, 0.87), rgba(245, 245, 245, 0.959));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        position: relative;
+        top: -50%;
+        font-size: 70px;
+        font-weight: bold;
+    }
+    h5{
+        position: relative;
+        top: -50%;
+        text-align: right;
+        padding: 10px;
+        font-weight: bold;
+        // color: #4e4d4de3;
+        color: orange;
+        font-size: 40px;
+
     }
 }
-// section{
-//     background: url(../images/sw12.jpg) no-repeat;
-//     background-size: cover;
-//     background-position: center center;
-//     width: 100%;
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-// }
-// .jala__{
-//     height: 100vh;
-//     width: 100%;
-//     margin: auto;
-//     margin-top: 200px;
-//     background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
-//     animation: gradient 15s ease infinite;
-//     h1{
-//         font-size: 40px;
-//         color: orange;
-//         text-align: center;
-//     }
-// }
-
 
 .carousel > button{
     position: absolute;
@@ -167,13 +200,10 @@ footer{
     padding: 30px 0 0 0;
     width: 100%;
     border-top: 1px solid orange;
-    // background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
-    // animation: gradient 15s ease infinite;
     nav{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        // flex-direction: column;
         width: 100%;
         .main_footer{
             padding: 20px;
@@ -183,7 +213,7 @@ footer{
             border-radius: 10px;
             }
             .social{
-                z-index: 4;
+                z-index: 3;
             }
         }
         .quick_links{
@@ -265,6 +295,7 @@ footer{
             .our_social{
                 display: flex;
                 justify-content: space-evenly;
+                align-items: center;
                 width: 60%;
                 align-items: center;
                 padding: 10px;
@@ -272,20 +303,20 @@ footer{
                 h4{
                     all: inherit;
                     color: whitesmoke;
-                    font-size: x-large;
+                    font-size: xx-large;
                 }
-                div{
-                    color: white;
-                    font-size: 20px;
-                    padding: 20px;
-                    i{
-                        font-size: 40px;
+                div.net_us{
+                    padding: 5px;
+                    svg{
                         cursor: pointer;
-                    }
-                    i:hover{
-                        color: orange;
-                        transition: ease-in-out .8s;
+                        width: 30px;
+                        height: 30px;
                         padding: 5px;
+                        fill: orange;
+                    }
+                    svg:hover{
+                        fill: whitesmoke;
+                        transition: ease-in-out .8s;
                     }
                 }
             }
@@ -364,12 +395,94 @@ footer{
 }
 
 @media (max-width:1024px){
+    .carousel{
+        height: 50vh;
+        margin: 0;
+        background: url(../images/sw44.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .slide{
+        h1{
+            font-size: 38px;
+        }
+        h5{
+            font-size: 20px;
+        }
+    }
     .music_Home{
         display: flex;
         justify-content: space-between;
+        .jala_logo{
+            h1{
+                font-size: 30px;
+            }
+        }
         .index_header{
+            all: unset;
             display: none;
+            z-index: 4;
+            transition: width 0.9s;
         }   
+        .overlay {
+            @include overlay_funct();
+        }
+        .index_header.open{
+            ul{
+                flex-direction: column;
+                position: absolute;
+                top: 78px;
+                right: 0;
+                background: whitesmoke;
+                width: 100%;
+                z-index: 3;
+                animation: openMenu 0.5s; 
+                li{
+                    flex-direction: column;
+                    padding: 10px;
+                    margin: 10px;
+                    a{
+                        color: orange;
+                    }
+                }
+            }
+        }
+        .index_header.close {
+            ul{
+                animation: closeMenu 0.5s;
+            }
+        }
+
+        @keyframes openMenu {
+            0% {
+                opacity: 0; /* Start with opacity 0 */
+                transform: translateY(-20px); /* Move the menu up slightly */
+            }
+            50% {
+                opacity: 0.5; /* Halfway through, opacity increases */
+                transform: translateY(-10px); /* Move the menu halfway back down */
+            }
+            100% {
+                opacity: 1; /* End with opacity 1 */
+                transform: translateY(0); /* Return to its original position */
+            }
+        }
+
+        @keyframes closeMenu {
+            0% {
+                opacity: 1; /* Start with opacity 1 */
+                transform: translateY(0); /* Start at its original position */
+            }
+            50% {
+                opacity: 0.5; /* Halfway through, opacity decreases */
+                transform: translateY(-10px); /* Move the menu halfway up */
+            }
+            100% {
+                opacity: 0; /* End with opacity 0 */
+                transform: translateY(-20px); /* Move the menu all the way up */
+            }
+        }
+
         .menu_toggle{
             display: block;
             font-size: 50px;
@@ -378,7 +491,21 @@ footer{
             border: none;
             cursor: pointer;
         }
+        .menu-close{
+            display: block;
+            font-size: 40px;
+            width: 20%;
+            display: flex;
+            justify-content: left;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: darkred;
+            font-weight: bold;
+        }
     }
+    
     .slide{
         display: none;
         h1{
@@ -409,7 +536,8 @@ footer{
                 width: 100%;
             }
             .contacts{
-                all: inherit;
+                width: 100%;
+                margin-top: 20px;
             }
             .under_img{
                 opacity: 0.5;
@@ -429,21 +557,27 @@ footer{
                     h4{
                         font-size: large;
                         text-transform: uppercase;
+                        color: whitesmoke;
                     }
                     div{
                         display: flex;
-                        flex-wrap: wrapx;
+                        flex-wrap: wrap;
                         i{
-                            font-size: 25px;
+                            font-size: 20px;
                         }
                     }
                 }
             }
             #cookieBanner{
-                flex: 1;
+                background:#4e4e4ee3;
+                width: 100%;
+                flex-direction: column;
+                p{
+                    font-size: large;
+                }
             }
             #cookieBanner button{
-                width: 40%;
+                width: 80%;
             }
         }
     }

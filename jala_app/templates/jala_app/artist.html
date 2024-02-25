@@ -7,6 +7,15 @@
         <div class="artist_container">
             <!-- <div class="artist_head"> <h1>Artist</h1> </div>  -->
         </div>
+        <div class="our_artist">
+            <ul>
+                {% for people in artists %}
+                    <li>
+                        {{people.artistName}}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 {% endblock %}
