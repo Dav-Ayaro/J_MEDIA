@@ -22,7 +22,6 @@
 }
 
 body {
-  max-width: 1400px;
   margin: auto;
 }
 body .check_slider {
@@ -47,7 +46,6 @@ body .check_slider .slider img {
   background: rgba(0, 0, 0, 0.8901960784);
   align-items: center;
   z-index: 4;
-  max-width: 1400px;
 }
 .music_Home a {
   text-decoration: none;
@@ -126,21 +124,25 @@ body .check_slider .slider img {
 }
 .slide h1 {
   color: whitesmoke;
-  z-index: 999;
-  text-align: right;
   padding: 10px;
   font-size: 50px;
   position: relative;
   top: -50%;
   font-size: 70px;
-  font-weight: bold;
+  font-weight: bolder;
+  background: black;
+  width: 40%;
+  float: right;
 }
 .slide h5 {
   position: relative;
-  top: -50%;
-  text-align: right;
+  top: -30%;
+  background: white;
+  float: right;
+  left: 540px;
+  width: 40%;
   padding: 10px;
-  font-weight: bold;
+  font-weight: bolder;
   color: orange;
   font-size: 40px;
 }
@@ -310,7 +312,6 @@ footer nav #cookieBanner {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1400px;
 }
 footer nav #cookieBanner p {
   margin: 0;
@@ -386,8 +387,8 @@ footer span {
     display: flex;
     justify-content: space-between;
   }
-  .music_Home .jala_logo h1 {
-    font-size: 30px;
+  .music_Home .jala_logo h1 a {
+    font-size: 40px;
   }
   .music_Home .index_header {
     all: unset;

@@ -32,13 +32,12 @@
     font-style: normal;
 }
 body{
-    max-width: 1400px;
+    // max-width: 1400px;
     margin: auto;
 
     .check_slider{
         width: 100%;
         height: 100vh;
-        // background: blue;
         .slider{
             width: 100%;
             height: auto;
@@ -58,7 +57,7 @@ body{
     background: #000000e3;
     align-items: center;
     z-index: 4;
-    max-width: 1400px;
+    // max-width: 1400px;
     a{
         text-decoration: none;
         color: orange;
@@ -146,22 +145,25 @@ body{
     height: 100%;
     h1{
         color: whitesmoke;
-        z-index: 999;
-        text-align: right;
         padding: 10px;
         font-size: 50px;
         position: relative;
         top: -50%;
         font-size: 70px;
-        font-weight: bold;
+        font-weight: bolder;
+        background: black;
+        width: 40%;
+        float: right;
     }
     h5{
         position: relative;
-        top: -50%;
-        text-align: right;
+        top: -30%;
+        background: white;
+        float: right;
+        left: 540px;
+        width: 40%;
         padding: 10px;
-        font-weight: bold;
-        // color: #4e4d4de3;
+        font-weight: bolder;
         color: orange;
         font-size: 40px;
 
@@ -333,7 +335,7 @@ footer{
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 1400px;
+            // max-width: 1400px;
         }
 
         #cookieBanner p {
@@ -415,7 +417,9 @@ footer{
         justify-content: space-between;
         .jala_logo{
             h1{
-                font-size: 30px;
+                a{
+                    font-size: 40px;
+                }
             }
         }
         .index_header{
