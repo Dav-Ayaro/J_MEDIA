@@ -69,7 +69,7 @@ body{
                 text-align: center;
                 color: whitesmoke;
                 margin: auto;
-                font-size: large;
+                font-size: xx-large;
             }
         }
         .distribute{
@@ -127,7 +127,7 @@ body{
     }
     .container1{
         display: flex;
-        width: 95%;
+        width: 100%;
         justify-content: space-between;
         margin: auto;
         margin-top: 0;
@@ -135,17 +135,19 @@ body{
         background: radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.85), #141414),radial-gradient(ellipse at top, var(--plan-color-1), transparent),radial-gradient(ellipse at bottom, var(--plan-color-2), transparent);
         transition: all 50ms ease;
         .image_1{
-            width: 40%;
+            width: 50%;
+            display: flex;
             margin: auto;
+            justify-content: center;
             padding: 15px;
             img{
                 width: 350px;
                 border-radius: 10px;
-                border: 2px solid rgba(0, 0, 0, 0.582);
+                transform: rotate(20deg);
             }
         }
         .container1_txt{
-            width: 70%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             font-size: x-large;
@@ -153,6 +155,7 @@ body{
                 color: orange;
                 padding: 10px;
                 font-size: 45px;
+                font-weight: bold;
             }
             ul{
                 width: 80%;
@@ -190,6 +193,7 @@ body{
                     color: orange;
                     font-size: 50px;
                     padding: 10px;
+                    font-weight: bold;
                 }
                 span{
                     display: flex;
@@ -202,8 +206,8 @@ body{
             .image_2{
                 width: 40%;
                 img{
-                    border-radius: 10px;
                     width: 100%;
+                    transform: rotate(-10deg);
                 }
             }
         }
@@ -325,6 +329,7 @@ body{
             padding: 10px;
             color: orange;
             font-size: 40px;
+            font-weight: bold;
             text-transform: uppercase;
         }
         .jala_artist{
@@ -718,6 +723,7 @@ body{
                 img{
                     width: 100%;
                     margin: auto;
+                    transform: unset;
                 }
             }
             .container1_txt{
@@ -763,6 +769,7 @@ body{
                     img{
                         width: 100%;
                         margin: auto;
+                        transform: unset;
                     }
                 }
             }

@@ -152,7 +152,7 @@ body{
         font-size: 70px;
         font-weight: bolder;
         background: black;
-        width: 40%;
+        width: 48%;
         float: right;
     }
     h5{
@@ -362,17 +362,20 @@ footer{
             font-weight: bold;
         }
     }
-    span{
+    .developer_section{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        background: black;
-        padding: 30px;
-        color: whitesmoke;
-        font-size: medium;
-        margin: auto;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 30px;
+        span{
+            font-size: large;
+            color: whitesmoke;
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+            }
+        }
     }
 }
 @keyframes gradient{
@@ -582,6 +585,17 @@ footer{
             }
             #cookieBanner button{
                 width: 80%;
+            }
+        }
+        .developer_section{
+            flex-direction: column;
+            padding: 10px;
+            span{
+                font-size: small;
+                padding: 10px;
+                a{
+                    font-size: small;
+                }
             }
         }
     }

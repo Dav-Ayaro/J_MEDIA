@@ -131,7 +131,7 @@ body .check_slider .slider img {
   font-size: 70px;
   font-weight: bolder;
   background: black;
-  width: 40%;
+  width: 48%;
   float: right;
 }
 .slide h5 {
@@ -336,17 +336,20 @@ footer nav #cookieBanner button:hover {
   color: #fff;
   font-weight: bold;
 }
-footer span {
+footer .developer_section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  text-align: center;
-  background: black;
   padding: 30px;
+}
+footer .developer_section span {
+  font-size: large;
   color: whitesmoke;
-  font-size: medium;
-  margin: auto;
+}
+footer .developer_section span a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 @keyframes gradient {
@@ -546,5 +549,16 @@ footer span {
   }
   footer nav #cookieBanner button {
     width: 80%;
+  }
+  footer .developer_section {
+    flex-direction: column;
+    padding: 10px;
+  }
+  footer .developer_section span {
+    font-size: small;
+    padding: 10px;
+  }
+  footer .developer_section span a {
+    font-size: small;
   }
 }/*# sourceMappingURL=allin.css.map */
