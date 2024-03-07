@@ -106,8 +106,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 80%;
   align-items: center;
   border-radius: 5px;
+  margin: auto;
 }
 .index_main_container .first_cntent .platform div {
   padding: 20px;
@@ -338,16 +340,50 @@ body {
 .index_main_container .artistic_say .jala_artist {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 15px;
-  overflow-x: auto;
   width: 100%;
 }
+.index_main_container .artistic_say .jala_artist div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+  cursor: pointer;
+}
 .index_main_container .artistic_say .jala_artist div img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
+}
+.index_main_container .artistic_say .jala_artist div .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.index_main_container .artistic_say .jala_artist div .overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.index_main_container .artistic_say .jala_artist div .overlay .text h2 {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+}
+.index_main_container .artistic_say .jala_artist div:hover .overlay {
+  opacity: 0.8;
 }
 .index_main_container .Connect {
   display: flex;
@@ -767,6 +803,14 @@ body {
   }
   .index_main_container .artistic_say h1 {
     font-size: 20px;
+  }
+  .index_main_container .artistic_say .jala_artist {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .index_main_container .artistic_say .jala_artist div {
+    width: 100%;
+    flex-wrap: nowrap;
   }
   .index_main_container .all_container .service_container {
     height: 80vh;

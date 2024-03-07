@@ -63,4 +63,3 @@ def why_us_page(request):
 
 def contact_us_page(request):
     return object.render_view(request, view_file='jala_app/contact.html')
-
