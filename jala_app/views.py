@@ -38,7 +38,7 @@ object = RenderUrls()
 
 def index_page(request):
     time = object.Time()
-    Famous = All_Artist.objects.all()
+    Famous = Famous_Artist.objects.all()
     return object.render_view(request, view_file='jala_app/index.html',time=time, Famous=Famous)
 
 

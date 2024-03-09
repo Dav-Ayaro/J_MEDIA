@@ -21,16 +21,15 @@ class UserAccounts(AbstractUser, PermissionsMixin):
 #         super(Update, self).save(*args, **kwargs)
 
 class Famous_Artist(models.Model):
-    adminId = models.ForeignKey(UserAccounts, on_delete=models.CASCADE, related_name='events', blank=False)
-    artistName = models.CharField(unique=True,max_length=54, help_text='Eg: freshers')
-    description = models.CharField(max_length=1000, help_text='event Description')
-    date = models.DateTimeField()
+    adminId = models.ForeignKey(UserAccounts, on_delete=models.CASCADE, related_name='Artist', blank=False)
+    artistName = models.CharField(unique=True,max_length=54, help_text='Eg: Abeke')
+    description = models.CharField(max_length=1000, help_text='artist Description')
     artistPhoto = models.ImageField(upload_to='assets/', help_text='photo size details')
     slug = models.SlugField(default='', null=False)
+    uploadDate = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.eventTitle
-    
+        return self.artistName
 
 class All_Artist(models.Model):
     adminId = models.ForeignKey(UserAccounts, on_delete=models.CASCADE, related_name='uploads', blank=False)

@@ -3,13 +3,11 @@ from .models import *
 
 # Register your models here.
 
-
 class UserView(admin.ModelAdmin):
     list_display = ['pk','username', 'email', 'is_superuser', 'password']
 
-
 class Famous_ArtistView(admin.ModelAdmin):
-    list_display = ['adminId', 'artistName', 'description', 'artistPhoto', 'date', 'slug']
+    list_display = ['adminId', 'artistName', 'description', 'artistPhoto', 'uploadDate', 'slug']
     # prepopulated_fields = {'slug': ('updateTitle', 'date') }
     # search_fields = ('updateTitle', 'slug')
 
