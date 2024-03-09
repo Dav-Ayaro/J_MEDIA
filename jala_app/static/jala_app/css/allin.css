@@ -415,7 +415,7 @@ footer .developer_section span a {
     top: 0px;
     right: 0;
     background: whitesmoke;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     z-index: 3;
     animation: openMenu 0.5s;
