@@ -143,7 +143,21 @@ body{
             justify-content: center;
             padding: 15px;
             img{
-                width: 350px;
+                width: 50%;
+                border-radius: 10px;
+                transform: rotate(20deg);
+            }
+        }
+        .image_1_1{
+            width: 60%;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            padding: 15px;
+            img{
+                width: 100%;
+                height: 50vh;
+                padding: 20px;
                 border-radius: 10px;
                 transform: rotate(20deg);
             }
@@ -163,7 +177,7 @@ body{
                 width: 80%;
                 text-align: start;
                 li{
-                    list-style: none;
+                    // list-style: none;
                     color: whitesmoke;
                     font-size: larger;
                     padding: 5px;
@@ -207,9 +221,11 @@ body{
             }
             .image_2{
                 width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 img{
-                    width: 100%;
-                    transform: rotate(-10deg);
+                    width: 50%;
                 }
             }
         }
@@ -760,11 +776,21 @@ body{
         }
         .container1{
             flex-direction: column;
-            // background: green;
+            margin: 0;
             .image_1{
                 width: 100%;
                 display: flex;
-                height: 100vh;
+                // height: 100vh;
+                img{
+                    width: 100%;
+                    margin: auto;
+                    transform: unset;
+                }
+            }
+            .image_1_1{
+                width: 100%;
+                display: flex;
+                // height: 40vh;
                 img{
                     width: 100%;
                     margin: auto;
@@ -778,11 +804,15 @@ body{
                     font-size: 28PX;
                 }
                 ul{
+                    display: flex;
+                    flex-direction: column;
                     width: 100%;
                     margin: auto;
+                    text-align: start;
                     li{
                         font-size: x-large;
-                        text-align: center;
+                        width: 68%;
+                        margin: auto;
                     }
                 }
             }
