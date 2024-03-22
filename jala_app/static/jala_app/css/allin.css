@@ -374,9 +374,9 @@ footer .developer_section span a {
 }
 @media (max-width: 1024px) {
   .carousel {
-    height: 50vh;
+    height: 30%;
     margin: 0;
-    background: url(../images/sw44.jpg) no-repeat;
+    background: url(../images/adv.jpg) no-repeat;
     background-position: center;
     background-size: contain;
   }
