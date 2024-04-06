@@ -696,6 +696,7 @@ body {
 .index_main_container .all_container .jala_contacts .contacts_list h1 {
   color: orange;
   padding: 20px;
+  font-size: 50px;
 }
 .index_main_container .all_container .jala_contacts .jala_map {
   padding: 30px;
