@@ -334,7 +334,6 @@ footer{
             display: flex;
             justify-content: center;
             align-items: center;
-            // max-width: 1400px;
         }
 
         #cookieBanner p {
@@ -400,9 +399,8 @@ footer{
 
 @media (max-width:1024px){
     .carousel{
-        height: 30%;
+        height: 35%;
         margin: 0;
-        // background: url(../images/sw44.jpg) no-repeat;
         background: url(../images/adv.jpg) no-repeat;
         background-position: center;
         background-size: contain;
