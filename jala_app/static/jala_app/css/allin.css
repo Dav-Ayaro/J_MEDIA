@@ -75,7 +75,6 @@ body .check_slider .slider img {
   color: whitesmoke;
   padding: 10px;
   font-size: x-large;
-  font-weight: bold;
 }
 .music_Home .index_header ul li a:hover {
   color: #ffbb00;
@@ -114,6 +113,7 @@ body .check_slider .slider img {
   width: 100%;
   height: 100%;
   margin: auto;
+  margin-top: 80px;
 }
 
 .slide {

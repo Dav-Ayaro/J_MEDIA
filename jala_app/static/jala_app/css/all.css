@@ -45,6 +45,7 @@ body {
   font-size: 58px;
 }
 .index_main_container .first_cntent {
+  margin-top: 60px;
   width: 100%;
   background: #1b1b1b;
   padding: 30px;
@@ -64,7 +65,8 @@ body {
   word-spacing: 1.5px;
   font-size: xx-large;
   width: 80%;
-  color: whitesmoke;
+  color: rgba(218, 216, 216, 0.5882352941);
+  font-weight: 100;
   display: flex;
   margin: auto;
   padding: 20px;
@@ -72,7 +74,7 @@ body {
 .index_main_container .first_cntent .text1 h3 {
   padding: 10px;
   text-align: center;
-  color: whitesmoke;
+  color: rgba(218, 216, 216, 0.5882352941);
   margin: auto;
   font-size: xx-large;
 }
@@ -182,7 +184,7 @@ body {
   text-align: start;
 }
 .index_main_container .container1 .container1_txt ul li {
-  color: whitesmoke;
+  color: rgba(218, 216, 216, 0.5882352941);
   font-size: larger;
   padding: 5px;
 }
@@ -216,7 +218,7 @@ body {
   font-weight: bold;
 }
 .index_main_container .container2 .insider_container2 .container2_txt ul li {
-  color: whitesmoke;
+  color: rgba(218, 216, 216, 0.5882352941);
   font-size: larger;
 }
 .index_main_container .container2 .insider_container2 .image_2 {
@@ -293,7 +295,7 @@ body {
   text-align: center;
   word-spacing: 1.5px;
   font-size: xx-large;
-  color: whitesmoke;
+  color: rgba(218, 216, 216, 0.5882352941);
 }
 .index_main_container .how_to ul {
   display: flex;

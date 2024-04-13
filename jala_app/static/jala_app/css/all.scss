@@ -42,6 +42,7 @@ body{
         }
     }
     .first_cntent{
+        margin-top: 60px;
         width: 100%;
         background: #1b1b1b;
         padding: 30px;
@@ -60,14 +61,16 @@ body{
             word-spacing: 1.5px;
             font-size: xx-large;
             width: 80%;
-            color: whitesmoke;
+            color: #dad8d896;
+            font-weight: 100;
             display: flex;
             margin: auto;
             padding: 20px;
             h3{
                 padding: 10px;
                 text-align: center;
-                color: whitesmoke;
+                // color: whitesmoke;
+                color: #dad8d896;
                 margin: auto;
                 font-size: xx-large;
             }
@@ -178,7 +181,8 @@ body{
                 text-align: start;
                 li{
                     // list-style: none;
-                    color: whitesmoke;
+                    // color: whitesmoke;
+                    color: #dad8d896;
                     font-size: larger;
                     padding: 5px;
                 }
@@ -213,7 +217,8 @@ body{
                 }
                 ul{
                     li{
-                        color: whitesmoke;
+                        // color: whitesmoke;
+                        color: #dad8d896;
                         font-size: larger;
                     }
                 }
@@ -294,7 +299,8 @@ body{
             text-align:center;
             word-spacing: 1.5px;
             font-size: xx-large;
-            color: whitesmoke;
+            // color: whitesmoke;
+            color: #dad8d896;
         }
         ul{
             display: flex;
