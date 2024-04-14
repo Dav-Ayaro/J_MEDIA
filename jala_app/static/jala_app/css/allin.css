@@ -22,6 +22,7 @@
 }
 
 body {
+  max-width: 1400px;
   margin: auto;
 }
 body .check_slider {
@@ -46,6 +47,7 @@ body .check_slider .slider img {
   background: rgba(0, 0, 0, 0.8901960784);
   align-items: center;
   z-index: 4;
+  max-width: 1400px;
 }
 .music_Home a {
   text-decoration: none;
@@ -304,15 +306,17 @@ footer nav #cookieBanner {
   width: 100%;
   padding: 10px;
   background-color: rgba(255, 187, 0, 0.8274509804);
-  color: white;
+  color: whitesmoke;
   text-align: center;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  max-width: 1400px;
 }
 footer nav #cookieBanner p {
   margin: 0;
+  font-size: large;
 }
 footer nav #cookieBanner button {
   margin: 5px;
@@ -324,7 +328,7 @@ footer nav #cookieBanner button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 footer nav #cookieBanner button:hover {
   transition: all ease-in-out 0.5s;

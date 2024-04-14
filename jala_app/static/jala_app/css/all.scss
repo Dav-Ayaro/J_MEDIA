@@ -23,7 +23,7 @@
 body{
     background: black;
     scroll-padding: 10px;
-    // max-width: 1400px;
+    max-width: 1400px;
     margin: auto;
     background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414),center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
     animation: gradient 15s ease infinite;
@@ -96,7 +96,6 @@ body{
             }
             a:hover{
                 transition: all ease-in-out .8s;
-                // background: black;
                 border: 1px solid orange;
                 border-radius: 40px;
             }
@@ -145,7 +144,7 @@ body{
             justify-content: center;
             padding: 15px;
             img{
-                width: 50%;
+                width: 30%;
                 border-radius: 10px;
                 transform: rotate(20deg);
             }
@@ -179,9 +178,7 @@ body{
                 width: 80%;
                 text-align: start;
                 li{
-                    // list-style: none;
                     color: whitesmoke;
-    
                     font-size: larger;
                     padding: 5px;
                 }
@@ -228,7 +225,7 @@ body{
                 align-items: center;
                 justify-content: center;
                 img{
-                    width: 50%;
+                    width: 40%;
                 }
             }
         }

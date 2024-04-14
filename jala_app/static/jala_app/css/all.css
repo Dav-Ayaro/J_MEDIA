@@ -25,6 +25,7 @@
 body {
   background: black;
   scroll-padding: 10px;
+  max-width: 1400px;
   margin: auto;
   background: center 100% radial-gradient(ellipse at bottom, rgba(20, 20, 20, 0.8) 10% 10%, #141414), center/400% no-repeat linear-gradient(-45deg, var(--green-1), var(--blue-1), var(--red-1), var(--yellow-1));
   animation: gradient 15s ease infinite;
@@ -149,7 +150,7 @@ body {
   padding: 15px;
 }
 .index_main_container .container1 .image_1 img {
-  width: 50%;
+  width: 30%;
   border-radius: 10px;
   transform: rotate(20deg);
 }
@@ -228,7 +229,7 @@ body {
   justify-content: center;
 }
 .index_main_container .container2 .insider_container2 .image_2 img {
-  width: 50%;
+  width: 40%;
 }
 .index_main_container .container2 .our_services {
   display: flex;

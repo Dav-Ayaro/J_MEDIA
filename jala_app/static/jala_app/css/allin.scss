@@ -32,9 +32,12 @@
     font-style: normal;
 }
 body{
-    // max-width: 1400px;
+    max-width: 1400px;
+    // position: relative;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     margin: auto;
-
     .check_slider{
         width: 100%;
         height: 100vh;
@@ -57,7 +60,7 @@ body{
     background: #000000e3;
     align-items: center;
     z-index: 4;
-    // max-width: 1400px;
+    max-width: 1400px;
     a{
         text-decoration: none;
         color: orange;
@@ -327,16 +330,18 @@ footer{
             width: 100%;
             padding: 10px;
             background-color: #ffbb00d3;
-            color: white;
+            color: whitesmoke;
             text-align: center;
             box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
+            max-width: 1400px;
         }
 
         #cookieBanner p {
             margin: 0;
+            font-size: large;
         }
         #cookieBanner button {
             margin: 5px;
@@ -348,7 +353,7 @@ footer{
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 14px;
         }
         #cookieBanner button:hover{
             transition: all ease-in-out .5s;
