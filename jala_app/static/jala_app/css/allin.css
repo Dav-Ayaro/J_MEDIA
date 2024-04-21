@@ -22,7 +22,6 @@
 }
 
 body {
-  max-width: 1400px;
   margin: auto;
 }
 body .check_slider {
@@ -47,7 +46,6 @@ body .check_slider .slider img {
   background: rgba(0, 0, 0, 0.8901960784);
   align-items: center;
   z-index: 4;
-  max-width: 1400px;
 }
 .music_Home a {
   text-decoration: none;
@@ -312,7 +310,6 @@ footer nav #cookieBanner {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1400px;
 }
 footer nav #cookieBanner p {
   margin: 0;
