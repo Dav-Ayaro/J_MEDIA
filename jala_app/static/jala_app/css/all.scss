@@ -869,7 +869,6 @@ body{
             }
         }
         .artistic_say{
-            overflow-x: scroll;
             h1{
                 font-size: 20px;
             }
@@ -877,8 +876,8 @@ body{
                 width: 100%;
                 // padding: 0;
                 flex-wrap: nowrap;
-                
                 justify-content: space-between;
+                overflow-x: scroll;
                 div.picture{
                     width: 100%;
                     display: flex;
@@ -892,7 +891,7 @@ body{
                         display: flex;
                         justify-content: center;
                         .Name{
-                            font-size: 16px;
+                            font-size: 25px;
                             color: #cac9c9;
                             text-transform: uppercase;
                             padding:2px;
@@ -900,7 +899,7 @@ body{
                         }
                         .desc{
                             color: #fcda00;
-                            font-size: 10px;
+                            font-size: 20px;
                             text-transform: uppercase;
                             padding:2px;
                             text-align: center;

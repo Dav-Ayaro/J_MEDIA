@@ -832,9 +832,6 @@ body {
   .index_main_container .how_to .start_now a {
     font-size: large;
   }
-  .index_main_container .artistic_say {
-    overflow-x: scroll;
-  }
   .index_main_container .artistic_say h1 {
     font-size: 20px;
   }
@@ -842,6 +839,7 @@ body {
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-between;
+    overflow-x: scroll;
   }
   .index_main_container .artistic_say .jala_artist div.picture {
     width: 100%;
@@ -858,7 +856,7 @@ body {
     justify-content: center;
   }
   .index_main_container .artistic_say .jala_artist div.picture .overlay .Name {
-    font-size: 16px;
+    font-size: 25px;
     color: #cac9c9;
     text-transform: uppercase;
     padding: 2px;
@@ -866,7 +864,7 @@ body {
   }
   .index_main_container .artistic_say .jala_artist div.picture .overlay .desc {
     color: #fcda00;
-    font-size: 10px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 2px;
     text-align: center;
