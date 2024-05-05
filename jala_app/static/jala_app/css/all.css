@@ -374,7 +374,7 @@ body {
   justify-content: center;
 }
 .index_main_container .artistic_say .jala_artist div.picture .overlay .Name {
-  font-size: 30px;
+  font-size: 20px;
   color: #cac9c9;
   text-transform: uppercase;
   padding: 2px;
@@ -382,7 +382,7 @@ body {
 }
 .index_main_container .artistic_say .jala_artist div.picture .overlay .desc {
   color: #fcda00;
-  font-size: 18px;
+  font-size: 13px;
   text-transform: uppercase;
   padding: 2px;
   text-align: center;
