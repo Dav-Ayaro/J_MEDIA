@@ -362,8 +362,8 @@ body {
   cursor: pointer;
 }
 .index_main_container .artistic_say .jala_artist div.picture img {
-  width: 80%;
-  height: 80%;
+  width: 300px;
+  height: 280px;
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
@@ -832,16 +832,44 @@ body {
   .index_main_container .how_to .start_now a {
     font-size: large;
   }
+  .index_main_container .artistic_say {
+    overflow-x: scroll;
+  }
   .index_main_container .artistic_say h1 {
     font-size: 20px;
   }
   .index_main_container .artistic_say .jala_artist {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-  }
-  .index_main_container .artistic_say .jala_artist div {
     width: 100%;
     flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .index_main_container .artistic_say .jala_artist div.picture {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .index_main_container .artistic_say .jala_artist div.picture img {
+    width: 200px;
+    height: 200px;
+  }
+  .index_main_container .artistic_say .jala_artist div.picture .overlay {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .index_main_container .artistic_say .jala_artist div.picture .overlay .Name {
+    font-size: 25px;
+    color: #cac9c9;
+    text-transform: uppercase;
+    padding: 2px;
+    text-align: center;
+  }
+  .index_main_container .artistic_say .jala_artist div.picture .overlay .desc {
+    color: #fcda00;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 2px;
+    text-align: center;
   }
   .index_main_container .all_container .service_container {
     height: 80vh;

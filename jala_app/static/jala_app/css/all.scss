@@ -339,10 +339,6 @@ body{
         justify-content: center;
         align-items: center;
         padding: 30px;
-        // margin-top: 40px;
-        // margin-bottom: 150px;
-        // height: 500px;
-        // background: red;
         h1{
             text-emphasis: none;
             text-align: center;
@@ -358,7 +354,6 @@ body{
             flex-wrap: wrap;
             padding: 15px;
             width: 100%;
-            // margin-bottom: 100px;
             div.picture{
                 display: flex;
                 justify-content: center;
@@ -366,8 +361,8 @@ body{
                 width: 25%;
                 cursor: pointer;
                 img{
-                    width: 80%;
-                    height: 80%;
+                    width: 300px;
+                    height: 280px;
                     border-radius: 10px;
                     margin: 10px;
                     cursor: pointer;
@@ -874,15 +869,43 @@ body{
             }
         }
         .artistic_say{
+            overflow-x: scroll;
             h1{
                 font-size: 20px;
             }
             .jala_artist{
+                width: 100%;
+                // padding: 0;
                 flex-wrap: nowrap;
-                overflow-x: scroll;
-                div{
+                
+                justify-content: space-between;
+                div.picture{
                     width: 100%;
-                    flex-wrap: nowrap;
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    .overlay{
+                        width:100%;
+                        display: flex;
+                        justify-content: center;
+                        .Name{
+                            font-size: 25px;
+                            color: #cac9c9;
+                            text-transform: uppercase;
+                            padding:2px;
+                            text-align: center;
+                        }
+                        .desc{
+                            color: #fcda00;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            padding:2px;
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
