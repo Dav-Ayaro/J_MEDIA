@@ -1,6 +1,7 @@
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
 
 from .views import *
 
@@ -13,6 +14,7 @@ urlpatterns =[
     path('platform', platform_page, name='platform_page'),
     path('our-service', services_page, name='services_page'),
     path('contact-us', contact_us_page, name='contact_us_page'),
+    path('sitemap.xml', TemplateView.as_view(template_name='sitemap.xml', content_type='text/xml')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
