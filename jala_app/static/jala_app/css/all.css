@@ -274,7 +274,6 @@ body {
 .index_main_container .how_to {
   width: 100%;
   margin: auto;
-  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -745,7 +744,7 @@ body {
     display: flex;
   }
   .index_main_container .container1 .image_1 img {
-    width: 100%;
+    width: 60%;
     margin: auto;
     transform: unset;
   }
@@ -782,7 +781,6 @@ body {
     display: flex;
     width: 100%;
     margin: auto;
-    margin-top: 100px;
   }
   .index_main_container .container2 .insider_container2 {
     flex-direction: column;
@@ -805,7 +803,7 @@ body {
     margin: auto;
   }
   .index_main_container .container2 .insider_container2 .image_2 img {
-    width: 100%;
+    width: 60%;
     margin: auto;
     transform: unset;
   }
@@ -816,6 +814,9 @@ body {
     width: 60%;
     font-weight: bold;
     font-size: large;
+  }
+  .index_main_container .how_to {
+    margin-top: unset;
   }
   .index_main_container .how_to h1 {
     font-size: 28px;
