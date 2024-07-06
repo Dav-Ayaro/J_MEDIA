@@ -14,6 +14,7 @@ urlpatterns =[
     path('platform', platform_page, name='platform_page'),
     path('our-service', services_page, name='services_page'),
     path('contact-us', contact_us_page, name='contact_us_page'),
+    path('slide',slideshow_view, name='slideshow_view'),
     path('sitemap.xml', TemplateView.as_view(template_name='sitemap.xml', content_type='text/xml')),
 ]
 if settings.DEBUG:

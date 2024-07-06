@@ -39,3 +39,11 @@ class All_Artist(models.Model):
 
     def __str__(self):
         return f"{self.adminId.username}'s Photo {self.id}"
+    
+class Slide(models.Model):
+    image = models.ImageField(upload_to='slides/')
+    link = models.URLField()
+    caption = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return self.caption

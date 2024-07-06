@@ -4,6 +4,28 @@
 
 {% block body %}
 
+    
+        <div class="slideshow-container">
+            {% if slides %}
+                {% for slide in slides %}
+                <div class="slides">
+                    <a href="{{ slide.link }}" target="_self">
+                        <img src="{{ slide.image.url }}">
+                    </a>
+                    <div class="caption">{{ slide.caption }}</div>
+                </div>
+                {% endfor %}
+
+            {% else %}
+                    <div class="slides active">
+                        <img src="{% static 'jala_app/images/adv.jpg' %}" alt="Default Image">
+                        <div class="caption">Default Caption</div>
+                    </div>
+            {% endif %}
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
     <div class="index_main_container">
         <div class="first_cntent">
             <h1> JALA MEDIA </h1>
