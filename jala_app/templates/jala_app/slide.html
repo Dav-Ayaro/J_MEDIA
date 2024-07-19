@@ -106,7 +106,10 @@
                 <a href="{{ slide.link }}" target="_self">
                     <img src="{{ slide.image.url }}">
                 </a>
-                <div class="caption">{{ slide.caption }}</div>
+                <a href="{{ slide.link }}" target="_self">
+                    <div class="caption">{{ slide.caption }}</div>
+                </a>
+                
             </div>
             {% endfor %}
 
