@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELEASE</title>
+</head>
+<body>
+    
+    <h1> Release your songs here </h1>
+<h2> signup to  release </h2>
+<form action="{% url 'release_page' %}" method="post">
+    {% csrf_token %}  <!-- Django CSRF protection token -->
+    {{ capture_form_data.as_p}}  <!-- randering form as aparagraph -->
+    <button type="submit">submit</button> <!-- submit button -->
+</form>
+
+</body>
+</html>
+

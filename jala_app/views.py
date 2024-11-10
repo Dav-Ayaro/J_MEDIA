@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import  login, logout, authenticate
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import *
+from .forms import ReleaseForm
 from django.db.models import Q
 from django.contrib.auth.hashers import make_password
 from django.http import FileResponse
@@ -12,6 +13,8 @@ from django.utils import timezone
 from django.urls import reverse
 from django.db import IntegrityError
 from django.core.exceptions import ObjectDoesNotExist
+from django.core.mail import send_mail
+from django.contrib.auth.hashers import make_password
 
 # Create your views here.
 
@@ -67,3 +70,36 @@ def why_us_page(request):
 
 def contact_us_page(request):
     return object.render_view(request, view_file='jala_app/contact.html')
+
+def release_page(request):
+    if request.method == "POST":
+        capture_form_data = ReleaseForm(request.POST)
+        if capture_form_data.is_valid():
+            release = Release(
+            ArtistName = capture_form_data.cleaned_data['ArtistName'],
+            FeaturedArtist = capture_form_data.cleaned_data['FeaturedArtist'],
+            SongWriters = capture_form_data.cleaned_data['SongWriters'],
+            Producers = capture_form_data.cleaned_data['Producers'],
+            ReleaseDate = capture_form_data.cleaned_data['ReleaseDate'],
+            MusicType =  capture_form_data.cleaned_data['MusicType'],
+            RadioChoices = capture_form_data.cleaned_data['RadioChoices'],
+            GenderChoices = capture_form_data.cleaned_data['GenderChoices'],
+            FileUpload = capture_form_data.cleaned_data['FileUpload'],
+            CoverArt = capture_form_data.cleaned_data['CoverArt'],
+            Muamala = capture_form_data.cleaned_data['Muamala'],
+            PhoneNumber = capture_form_data.cleaned_data['PhoneNumber'],
+            Email = capture_form_data.cleaned_data['Email'],
+            )
+            release.save()  # Save the object to the database
+            try:
+                #send mail block code
+                subject = 'Submitted Successful'
+                message = f"Dear {ArtistName}, \n\n Thank You for Submitting your file to us: \n\n  Here is your File information: \n\n Artist Name: {ArtistName}\n Featured Artist: {FeaturedArtist}\n Song Writters: {SongWriters}\n producers: {Producers}\n realease Date: {ReleaseDate}\n Music Type: {MusicType}\n In case of anthing kindly you can reach us out \n This is a secure place for your career\n Thank you fro choosing Jala Media entertainment."
+                from_email = settings.DEFAULT_FROM_EMAIL
+                recipient_list = [Email]
+                send_mail(subject, message, from_email, recipient_list)
+                return object.redirection_func(redirect_path = 'release_page')
+            except (OSError, socket.gaierror):
+                return object.render_view(request, view_file='jala_app/release.html', email_succesfully = True)
+    return object.render_view(request, view_file='jala_app/release.html', capture_form_data=ReleaseForm())
+

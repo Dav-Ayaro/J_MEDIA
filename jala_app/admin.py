@@ -17,8 +17,13 @@ class All_ArtistView(admin.ModelAdmin):
 class Slide_view(admin.ModelAdmin):
     list_display = ['image','link','caption']
 
+class Release_view(admin.ModelAdmin):
+    list_display = ['artist_name', 'cover_art','email']
+
+
 
 admin.site.register(UserAccounts, UserView),
 admin.site.register(Famous_Artist, Famous_ArtistView),
 admin.site.register(All_Artist, All_ArtistView),
 admin.site.register(Slide,Slide_view),
+admin.site.register(Release,Release_view),
